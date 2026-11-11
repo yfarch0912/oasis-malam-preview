@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Oasis Malam — Meyzsa &amp; Fahrezzi | Sabtu 12 Juni 2027</title>
+<meta name="description" content="Undangan pernikahan digital Oasis Malam — gurun dan oasis malam Arab: Meyzsa & Fahrezzi, Sabtu 12 Juni 2027, Jakarta.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0a2e'/%3E%3Cpath d='M21 5a10 10 0 1 0 6 17A12 12 0 0 1 21 5z' fill='%23f0d48a'/%3E%3C/svg%3E">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/undangya/oasis-malam/font-script.woff2">
+<style>
+@font-face{font-family:'Great Vibes';src:url('assets/undangya/oasis-malam/font-script.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+:root{
+  --gold:#d9ab4e; --gold-l:#f0d48a; --gold-pale:#fdf0cd;
+  --night:#0d0a2e; --night2:#171040; --plum:#2a1b4a; --plum2:#3b2566;
+  --ivory:#fdf8ea; --paper:#f6ecd2; --mut:#d9cdea; --body:#ece4f7;
+  --sand:#e8cf9f; --palm:#7fb069;
+  --line:rgba(240,212,138,.55);
+  --glass:rgba(16,11,46,.86); --glass2:rgba(23,16,64,.82);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#05031a;font-family:Georgia,'Times New Roman',serif;color:var(--ivory);-webkit-font-smoothing:antialiased}
+.script{font-family:'Great Vibes',cursive}
+.phone{max-width:430px;margin:0 auto;position:relative;min-height:100dvh;overflow:clip;box-shadow:0 0 90px rgba(0,0,0,.95);
+  background:
+    radial-gradient(120% 26% at 50% -2%,rgba(240,212,138,.13) 0%,transparent 55%),
+    radial-gradient(80% 18% at 8% 34%,rgba(88,52,160,.20) 0%,transparent 60%),
+    radial-gradient(80% 18% at 92% 66%,rgba(217,171,78,.10) 0%,transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23f0d48a' stroke-opacity='.08'%3E%3Cpath d='M36 6 L42 30 L66 36 L42 42 L36 66 L30 42 L6 36 L30 30 Z'/%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(180deg,#141038 0%,#0d0a2e 45%,#0a0724 100%);
+  background-size:auto,auto,auto,72px 72px,auto}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer}
+a{color:var(--gold-l)}
+/* ===== WORLD BACKGROUND (satu dunia menyatu di bawah sampul) ===== */
+.world-bg{position:absolute;left:0;right:0;top:0;height:1500px;z-index:0;pointer-events:none;overflow:hidden}
+.world-bg img{width:100%;height:100%;object-fit:cover;opacity:.5}
+.world-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,10,46,.25),rgba(13,10,46,.78) 70%,rgba(13,10,46,.96))}
+.world-bg2{position:absolute;left:0;right:0;bottom:0;height:1400px;z-index:0;pointer-events:none;overflow:hidden}
+.world-bg2 img{width:100%;height:100%;object-fit:cover;opacity:.42}
+.world-bg2::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,10,46,.3),rgba(13,10,46,.8) 60%,rgba(13,10,46,.97))}
+/* ============ COVER ============ */
+#cover{position:relative;height:100dvh;min-height:620px;overflow:hidden;background:#0d0a2e}
+.scene{position:absolute;inset:0;transform-origin:50% 62%;animation:dolly 3.2s cubic-bezier(.22,.8,.3,1) both}
+@keyframes dolly{from{transform:scale(1.32)}to{transform:scale(1)}}
+.lyr{position:absolute;pointer-events:none}
+.lyr-sky{inset:0;width:100%;height:100%;object-fit:cover;animation:skyIn 1.6s ease both,skyDrift 30s ease-in-out 1.6s infinite alternate}
+@keyframes skyIn{from{opacity:0}to{opacity:1}}
+@keyframes skyDrift{from{transform:scale(1.07) translateX(0)}to{transform:scale(1.07) translateX(-12px)}}
+.moon{position:absolute;top:6%;right:10%;width:64px;height:64px;z-index:2;animation:moonGlow 4.5s ease-in-out infinite alternate}
+@keyframes moonGlow{from{filter:drop-shadow(0 0 8px rgba(240,212,138,.55))}to{filter:drop-shadow(0 0 22px rgba(240,212,138,.95))}}
+.star{position:absolute;border-radius:50%;background:#ffefc2;animation:twinkle 2.8s ease-in-out infinite alternate;pointer-events:none;z-index:2}
+@keyframes twinkle{from{opacity:.12;transform:scale(.7)}to{opacity:.95;transform:scale(1.3)}}
+.lantern{position:absolute;top:-6px;width:13%;z-index:5;transform-origin:50% 0;animation:swayHang 8.6s ease-in-out infinite alternate}
+.lantern.l{left:4%}.lantern.r{right:4%;animation-duration:9.4s;animation-delay:.7s}
+@keyframes swayHang{from{transform:rotate(2.6deg)}to{transform:rotate(-2.6deg)}}
+.lamp-glow{position:absolute;top:9%;width:26%;height:13%;border-radius:50%;background:radial-gradient(50% 50% at 50% 50%,rgba(255,190,90,.5),transparent 70%);animation:flick 1.9s ease-in-out infinite alternate;pointer-events:none;z-index:4}
+.lamp-glow.l{left:-4%}.lamp-glow.r{right:-4%;animation-delay:.8s}
+@keyframes flick{from{opacity:.45;transform:scale(.92)}to{opacity:1;transform:scale(1.09)}}
+.palm-fg{position:absolute;bottom:-1%;z-index:3;transform-origin:50% 100%;animation:swayRoot 9.2s ease-in-out infinite alternate}
+.palm-fg.l{left:-7%;width:44%}.palm-fg.r{right:-7%;width:40%;animation-duration:10.4s;animation-delay:1.1s}
+@keyframes swayRoot{from{transform:rotate(-1.9deg)}to{transform:rotate(1.9deg)}}
+.flw-root{position:absolute;bottom:-1%;z-index:4;transform-origin:50% 100%;animation:swayRoot 8.2s ease-in-out infinite alternate}
+.ffly-field{position:absolute;inset:0;z-index:4;pointer-events:none;overflow:hidden}
+.ffly{position:absolute;border-radius:50%;pointer-events:none;opacity:0;animation:fflyRise var(--fd,11s) linear infinite;animation-delay:var(--fdl,0s)}
+.ffly i{display:block;width:100%;height:100%;border-radius:50%;background:radial-gradient(circle,rgba(255,244,205,1) 0%,rgba(255,214,130,.55) 38%,rgba(255,196,96,0) 70%);animation:fflyTw var(--ft,2.2s) ease-in-out infinite alternate}
+@keyframes fflyRise{0%{transform:translate3d(0,0,0);opacity:0}8%{opacity:.9}30%{transform:translate3d(10px,-12vh,0)}55%{transform:translate3d(-8px,-23vh,0)}88%{opacity:.85}100%{transform:translate3d(6px,-36vh,0);opacity:0}}
+@keyframes fflyTw{from{transform:scale(.72);opacity:.5}to{transform:scale(1.18);opacity:1}}
+.petal-field{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:6}
+.sec-petals{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.petal{position:absolute;left:0;top:var(--pt,10%);pointer-events:none;opacity:0;animation:petalDrift var(--pd,18s) linear infinite;animation-delay:var(--pdl,0s)}
+@keyframes petalDrift{0%{transform:translate3d(-70px,0,0) rotate(0deg) scaleX(1);opacity:0}6%{opacity:.85}25%{transform:translate3d(118px,var(--y25,12px),0) rotate(92deg) scaleX(.68)}50%{transform:translate3d(243px,var(--y50,22px),0) rotate(178deg) scaleX(1)}75%{transform:translate3d(368px,var(--y75,36px),0) rotate(266deg) scaleX(.68)}94%{opacity:.85}100%{transform:translate3d(505px,var(--ye,52px),0) rotate(352deg) scaleX(1);opacity:0}}
+.cover-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,5,30,.42) 0%,transparent 26%,transparent 50%,rgba(8,5,30,.72) 100%);z-index:4;pointer-events:none}
+.cover-ui{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;text-align:center;padding:24px 26px 30px}
+.cover-kicker{margin-top:21%;font-size:11.5px;font-weight:700;letter-spacing:.42em;color:#fff3d0;text-shadow:0 2px 14px rgba(5,3,20,.95);background:rgba(10,6,36,.55);padding:7px 14px;border-radius:999px;border:1px solid rgba(240,212,138,.5);animation:fadeUp 1s 3.3s ease both,kickerShine 3.6s ease-in-out 4.5s infinite alternate}
+@keyframes kickerShine{from{box-shadow:0 0 0 rgba(240,212,138,0)}to{box-shadow:0 0 18px rgba(240,212,138,.45)}}
+.cover-names{font-family:'Great Vibes',cursive;font-weight:400;margin-top:12px;font-size:64px;line-height:1.12;color:#fffaf0;text-shadow:0 2px 8px rgba(20,10,50,.8),0 0 28px rgba(240,212,138,.55),0 3px 22px rgba(5,3,20,.85);animation:fadeUp 1.1s 3.6s ease both}
+.cover-names .amp{display:block;font-size:34px;line-height:.95;margin:-4px 0 -8px;color:transparent;background:linear-gradient(115deg,#a87f2c 0%,#f0d48a 42%,#fff6d8 55%,#d9ab4e 100%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 2px 7px rgba(20,12,40,.7))}
+.cover-date{margin-top:10px;font-size:12.5px;letter-spacing:.28em;color:#ffedb8;text-shadow:0 1px 8px rgba(20,12,40,.7);background:linear-gradient(135deg,rgba(42,27,74,.78),rgba(120,90,30,.55) 55%,rgba(42,27,74,.75));padding:7px 15px;border-radius:999px;border:1px solid rgba(255,238,190,.85);box-shadow:0 6px 18px rgba(5,3,20,.6),inset 0 1px 0 rgba(255,255,255,.4);animation:fadeUp 1s 3.9s ease both,datePulse 3.2s ease-in-out 5s infinite alternate}
+@keyframes datePulse{from{transform:scale(1)}to{transform:scale(1.035)}}
+.cover-spacer{flex:1}
+.cover-guest{color:#fff6e0;font-size:12px;letter-spacing:.14em;text-shadow:0 2px 10px rgba(5,3,20,.95);background:rgba(10,6,36,.55);padding:6px 14px;border-radius:999px;animation:fadeUp 1s 4.2s ease both}
+.gname{margin-top:8px;font-size:23px;font-weight:600;color:#fff;text-shadow:0 2px 12px rgba(5,3,20,.95);background:rgba(10,6,36,.55);padding:4px 16px;border-radius:12px;animation:fadeUp 1s 4.35s ease both}
+#btnOpen{margin-top:14px;padding:13px 30px;border-radius:999px;border:1px solid var(--gold-l);background:linear-gradient(135deg,#5a3d8a,#d9ab4e 45%,#7a5c1e);color:#fff8e7;font-weight:700;font-size:13px;letter-spacing:.22em;box-shadow:0 10px 28px rgba(0,0,0,.65),inset 0 1px 0 rgba(255,255,255,.5);position:relative;overflow:hidden;animation:fadeUp 1s 4.5s ease both}
+#btnOpen::after{content:"";position:absolute;top:0;left:0;transform:translateX(-160%);width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);animation:sheen 2.8s ease-in-out infinite}
+@keyframes sheen{0%,55%{transform:translateX(-160%)}90%,100%{transform:translateX(300%)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+body.opening #cover{animation:pushZoom 1.15s cubic-bezier(.6,0,.8,.4) both}
+@keyframes pushZoom{to{transform:scale(1.55);opacity:0}}
+/* ============ CONTENT ============ */
+#content{display:none}
+body.opened #content{display:block}
+main{position:relative}
+section{position:relative;padding:64px 26px;z-index:1}
+.sec-head{text-align:center;margin-bottom:30px;position:relative;z-index:2}
+.sec-icon{width:56px;height:56px;margin:0 auto 10px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.7));animation:iconFloat 4.2s ease-in-out infinite alternate}
+@keyframes iconFloat{from{transform:translateY(0) rotate(-2deg)}to{transform:translateY(-6px) rotate(2deg)}}
+.sec-kicker{font-size:10.5px;letter-spacing:.4em;color:var(--gold-pale);font-weight:700;background:rgba(10,6,36,.72);display:inline-block;padding:6px 14px;border-radius:999px;border:1px solid var(--line)}
+.sec-title{font-size:30px;font-weight:700;color:var(--ivory);margin-top:12px;text-shadow:0 2px 12px rgba(5,3,20,.9)}
+.sec-sub{font-style:italic;font-size:17px;color:var(--paper);margin-top:8px;background:rgba(10,6,36,.66);display:inline-block;padding:5px 14px;border-radius:10px}
+.panel{background:var(--glass);border:1px solid var(--line);border-radius:22px;padding:28px 22px;box-shadow:0 14px 34px rgba(0,0,0,.5);position:relative;z-index:2}
+.panel-glass{background:var(--glass2);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.arch{border-radius:170px 170px 22px 22px}
+p.txt{font-size:14.5px;line-height:1.85;color:var(--body)}
+.small-note{font-size:11.5px;color:var(--mut);line-height:1.6}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;border:1px solid var(--gold-l);background:linear-gradient(135deg,#5a3d8a,#d9ab4e 55%,#7a5c1e);color:#fff8e7;font-weight:700;font-size:12px;letter-spacing:.18em;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,.5);transition:transform .25s ease}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.btn-alt{background:linear-gradient(135deg,#241548,#3b2566);color:var(--gold-pale)}
+.btn-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.chip{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(10,6,36,.85);color:var(--gold-pale);font-size:12px;font-weight:700;letter-spacing:.08em;animation:chipIn 2.8s ease-in-out infinite alternate}
+@keyframes chipIn{from{box-shadow:0 0 0 rgba(240,212,138,0)}to{box-shadow:0 0 12px rgba(240,212,138,.35)}}
+.swatch{width:44px;height:44px;border-radius:50%;border:2px solid var(--gold-l);box-shadow:0 6px 14px rgba(0,0,0,.5);animation:iconFloat 3.8s ease-in-out infinite alternate}
+/* REVEAL VARIANTS (amendemen: bervariasi, bukan fade seragam) */
+.rv{opacity:0}
+.rv-up{transform:translateY(34px)}
+.rv-left{transform:translateX(-38px)}
+.rv-right{transform:translateX(38px)}
+.rv-zoom{transform:scale(.86)}
+.rv-rot{transform:rotate(-4deg) translateY(20px) scale(.94)}
+.rv-rot2{transform:rotate(4deg) translateY(20px) scale(.94)}
+.rv-drop{transform:translateY(-30px)}
+.rv.in{opacity:1;transform:none;transition:opacity .95s cubic-bezier(.22,.8,.3,1),transform 1.05s cubic-bezier(.22,.8,.3,1)}
+.rv-d1{transition-delay:.08s!important}.rv-d2{transition-delay:.16s!important}.rv-d3{transition-delay:.26s!important}
+/* mempelai */
+.couple-photo{width:78%;margin:0 auto;border:3px solid var(--gold);border-radius:170px 170px 18px 18px;overflow:hidden;box-shadow:0 16px 36px rgba(0,0,0,.6)}
+.couple-photo img{width:100%;height:300px;object-fit:cover}
+.person-photo{width:62%;margin:0 auto;border:3px solid var(--gold);border-radius:150px 150px 16px 16px;overflow:hidden;box-shadow:0 14px 30px rgba(0,0,0,.55)}
+.person-photo img{width:100%;height:250px;object-fit:cover}
+.pname{font-family:'Great Vibes',cursive;font-size:38px;color:var(--gold-pale);margin-top:14px;text-shadow:0 2px 10px rgba(5,3,20,.8)}
+.ig-link{font-size:12.5px;letter-spacing:.1em}
+/* countdown */
+.cd-row{display:flex;gap:10px;justify-content:center}
+.cd-box{flex:1;max-width:78px;background:var(--glass);border:1px solid var(--line);border-radius:16px;padding:14px 4px 10px;text-align:center;box-shadow:0 10px 22px rgba(0,0,0,.5)}
+.cd-num{font-size:30px;font-weight:700;color:var(--gold-pale)}
+.cd-num.pop{animation:cdPop .45s ease}
+@keyframes cdPop{0%{transform:scale(1.18)}100%{transform:scale(1)}}
+.cd-lab{font-size:9.5px;letter-spacing:.24em;color:var(--mut);margin-top:4px;animation:chipIn 3s ease-in-out infinite alternate}
+/* acara */
+.event-card{text-align:center}
+.event-img{width:100%;height:170px;object-fit:cover;border-radius:150px 150px 14px 14px;border:2px solid var(--gold);margin-bottom:16px}
+.event-title{font-size:24px;color:var(--gold-pale)}
+/* galeri rel geser */
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 14px;scrollbar-width:none;position:relative;z-index:2}
+.rail::-webkit-scrollbar{display:none}
+.rail.dragging{scroll-snap-type:none;cursor:grabbing}
+.gal-slide{flex:0 0 76%;scroll-snap-align:center}
+.gal-photo{width:100%;height:340px;object-fit:cover;cursor:zoom-in}
+.frame-arch .gal-photo{border:3px solid var(--gold);border-radius:160px 160px 16px 16px;box-shadow:0 14px 30px rgba(0,0,0,.6)}
+.frame-none .gal-photo{border-radius:18px;box-shadow:0 12px 26px rgba(0,0,0,.55)}
+.gal-cap{margin-top:10px;text-align:center;font-style:italic;font-size:14px;color:var(--paper);background:rgba(10,6,36,.72);border-radius:10px;padding:5px 10px;animation:fadeUp 1s ease both}
+.rail-meta{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:4px;position:relative;z-index:2}
+.dots{display:flex;gap:7px}
+.dots i{width:8px;height:8px;border-radius:50%;background:rgba(240,212,138,.35);transition:all .3s}
+.dots i.on{background:var(--gold-l);transform:scale(1.35);box-shadow:0 0 10px rgba(240,212,138,.7)}
+.frac{font-size:12px;letter-spacing:.2em;color:var(--gold-pale);background:rgba(10,6,36,.8);padding:4px 12px;border-radius:999px;border:1px solid var(--line)}
+/* kisah */
+.story-item{display:flex;gap:14px;margin-bottom:22px;align-items:flex-start}
+.story-year{flex:0 0 62px;text-align:center;background:linear-gradient(160deg,#3b2566,#171040);border:1px solid var(--gold);color:var(--gold-pale);border-radius:14px;padding:10px 2px;font-weight:700;font-size:15px;box-shadow:0 8px 18px rgba(0,0,0,.5);animation:iconFloat 4.6s ease-in-out infinite alternate}
+.story-body{flex:1;background:var(--glass);border:1px solid var(--line);border-radius:16px;padding:16px}
+.story-body h3{font-size:17px;color:var(--gold-pale);margin-bottom:6px}
+.story-body p{font-size:13.5px;line-height:1.75;color:var(--body)}
+/* denah strip */
+.strip-img{width:100%;height:190px;object-fit:cover;border-radius:18px;border:2px solid var(--gold);box-shadow:0 12px 26px rgba(0,0,0,.55)}
+/* video */
+.vid-wrap{position:relative;border-radius:20px;overflow:hidden;border:2px solid var(--gold);box-shadow:0 16px 34px rgba(0,0,0,.6);z-index:2}
+.vid-wrap video{width:100%;display:block;aspect-ratio:9/16;max-height:560px;object-fit:cover;background:#000}
+#vidBtn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;border:2px solid var(--gold-l);background:rgba(13,10,46,.78);color:var(--gold-pale);font-size:26px;box-shadow:0 10px 26px rgba(0,0,0,.6);animation:datePulse 2.6s ease-in-out infinite alternate;z-index:3}
+.vid-wrap.playing #vidBtn{opacity:0;pointer-events:none}
+/* forms */
+form{display:flex;flex-direction:column;gap:12px;position:relative;z-index:2}
+input,select,textarea{font-family:inherit;font-size:14px;color:var(--ivory);background:rgba(8,5,30,.9);border:1px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+textarea{min-height:84px;resize:vertical}
+label.flab{font-size:11px;letter-spacing:.22em;color:var(--gold-pale);font-weight:700;background:rgba(10,6,36,.7);align-self:flex-start;padding:3px 10px;border-radius:999px}
+.gb-item{background:rgba(8,5,30,.75);border:1px solid rgba(240,212,138,.3);border-radius:14px;padding:13px 15px;margin-bottom:10px;text-align:left}
+.gb-item b{color:var(--gold-pale);font-size:14.5px}
+.gb-item .st{color:var(--palm);font-size:12px;margin-left:6px;font-weight:700}
+.gb-item p{font-size:13.5px;line-height:1.7;color:var(--body);margin-top:4px}
+.qr-img{width:180px;margin:0 auto;border:4px solid var(--gold-l);border-radius:18px;background:#fff;padding:6px}
+.gt-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.gt-item{position:relative;border-radius:12px;overflow:hidden}
+.gt-item img{width:100%;height:92px;object-fit:cover}
+.gt-del{position:absolute;top:4px;right:4px;width:22px;height:22px;border-radius:50%;border:none;background:rgba(10,6,36,.85);color:#fff;font-size:14px;line-height:1}
+.acc-row{display:flex;justify-content:space-between;align-items:center;gap:10px;background:rgba(8,5,30,.8);border:1px solid rgba(240,212,138,.3);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.acc-num{font-size:16px;letter-spacing:.08em;color:#fff;font-weight:700}
+.copy-btn{flex:0 0 auto;padding:9px 15px;border-radius:999px;border:1px solid var(--gold-l);background:#241548;color:var(--gold-pale);font-size:11px;font-weight:700;letter-spacing:.14em}
+.decor-side{position:absolute;z-index:1;pointer-events:none;transform-origin:50% 100%;animation:swayRoot 9s ease-in-out infinite alternate}
+.decor-hang{position:absolute;z-index:1;pointer-events:none;transform-origin:50% 0;animation:swayHang 8.8s ease-in-out infinite alternate}
+.foot-note{text-align:center;font-size:11px;line-height:1.7;color:var(--mut);padding:8px 34px 44px;position:relative;z-index:2;background:rgba(10,6,36,.6)}
+.penutup-names{font-family:'Great Vibes',cursive;font-size:44px;color:var(--gold-pale);text-shadow:0 2px 12px rgba(5,3,20,.85)}
+#btnMusic{position:fixed;right:calc(50% - 215px + 14px);bottom:18px;z-index:60;width:48px;height:48px;border-radius:50%;border:1px solid var(--gold-l);background:rgba(13,10,46,.88);display:none;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.6)}
+@media(max-width:460px){#btnMusic{right:14px}}
+body.opened #btnMusic{display:flex}
+#btnMusic svg{width:24px;height:24px}
+#btnMusic.playing svg{animation:iconFloat 1.6s ease-in-out infinite alternate}
+#lightbox{position:fixed;inset:0;background:rgba(4,2,18,.94);display:none;align-items:center;justify-content:center;z-index:90;padding:20px}
+#lightbox.on{display:flex}
+#lightbox img{max-height:86dvh;border-radius:18px;border:2px solid var(--gold)}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="phone">
+
+  <!-- ================= 1. SAMPUL ================= -->
+  <header id="cover" aria-label="Sampul undangan Oasis Malam">
+    <div class="scene" id="scene">
+      <img class="lyr lyr-sky" src="assets/undangya/oasis-malam/cover-bg.webp" alt="Lukisan oasis malam: kolam memantulkan cahaya, rumpun palem utuh, bukit pasir, unta siluet senja, langit berbintang dan bulan sabit">
+      <svg class="moon" viewBox="0 0 64 64" aria-hidden="true"><path d="M42 6a26 26 0 1 0 16 40A30 30 0 0 1 42 6z" fill="#f0d48a"/><circle cx="50" cy="14" r="3.2" fill="#fff3c4"/><circle cx="55" cy="24" r="2.2" fill="#ffe9a8"/></svg>
+      <img class="lantern l" src="assets/undangya/oasis-malam/lentera-bank.webp" alt="">
+      <img class="lantern r" src="assets/undangya/oasis-malam/lentera-bank.webp" alt="">
+      <div class="lamp-glow l"></div><div class="lamp-glow r"></div>
+      <div class="ffly-field" id="fflyCover" aria-hidden="true"></div>
+      <img class="palm-fg l" src="assets/undangya/oasis-malam/palem.webp" alt="">
+      <img class="palm-fg r" src="assets/undangya/oasis-malam/palem-kipas.webp" alt="">
+      <img class="flw-root" style="left:2%;width:24%" src="assets/undangya/oasis-malam/bloom-gurun.webp" alt="">
+      <img class="flw-root" style="right:2%;width:22%;animation-delay:1.4s" src="assets/undangya/oasis-malam/flw-mawar-krem.webp" alt="">
+      <img class="flw-root" style="left:24%;width:15%;animation-delay:.6s" src="assets/undangya/oasis-malam/flw-lavender.webp" alt="">
+      <img class="flw-root" style="right:23%;width:14%;animation-delay:2s" src="assets/undangya/oasis-malam/flw-kamboja.webp" alt="">
+      <div class="petal-field" id="petalCover" aria-hidden="true"></div>
+    </div>
+    <div class="cover-shade"></div>
+    <div class="cover-ui">
+      <p class="cover-kicker">UNDANGAN PERNIKAHAN</p>
+      <h1 class="cover-names">Meyzsa<span class="amp">&amp;</span>Fahrezzi</h1>
+      <p class="cover-date">SABTU · 12 JUNI 2027</p>
+      <div class="cover-spacer"></div>
+      <p class="cover-guest">KEPADA YTH. BAPAK/IBU/SAUDARA/I</p>
+      <p class="gname" id="guestName">Tamu Undangan</p>
+      <button id="btnOpen" type="button">BUKA UNDANGAN</button>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="world-bg" aria-hidden="true"><img src="assets/undangya/oasis-malam/bg-world.webp" alt="" data-plx="5"></div>
+    <!-- ================= 2. PEMBUKA / SAMBUTAN ================= -->
+    <section id="sambutan">
+      <div class="sec-petals" aria-hidden="true"></div>
+      <img class="decor-hang" style="top:0;right:2%;width:17%" src="assets/undangya/oasis-malam/lentera-bank.webp" alt="">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-drop" viewBox="0 0 64 64" aria-hidden="true"><path d="M42 6a26 26 0 1 0 16 40A30 30 0 0 1 42 6z" fill="#f0d48a"/><path d="M18 44l2.2 5.8L26 52l-5.8 2.2L18 60l-2.2-5.8L10 52l5.8-2.2z" fill="#fdf0cd"/></svg>
+        <p class="sec-kicker rv rv-left">BISMILLAHIRRAHMANIRRAHIM</p>
+        <h2 class="sec-title rv rv-up">Assalamu’alaikum Warahmatullahi Wabarakatuh</h2>
+      </div>
+      <div class="panel panel-glass rv rv-zoom" style="text-align:center">
+        <p class="txt rv rv-up">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.”</p>
+        <p class="rv rv-up rv-d1" style="margin-top:10px;font-size:12px;letter-spacing:.24em;color:var(--gold-pale);font-weight:700">— QS. AR-RUM AYAT 21 —</p>
+        <p class="txt rv rv-up rv-d2" style="margin-top:16px">Dengan memohon rahmat dan rida Allah SWT, kami bermaksud menyempurnakan separuh agama dalam ikatan suci pernikahan — seperti oasis yang ditemukan di tengah perjalanan panjang gurun kehidupan.</p>
+      </div>
+    </section>
+
+    <!-- ================= 3. MEMPELAI ================= -->
+    <section id="mempelai">
+      <img class="decor-side" style="left:-4%;bottom:4%;width:30%" src="assets/undangya/oasis-malam/kurma-ranting.webp" alt="">
+      <img class="decor-side" style="right:-4%;top:6%;width:26%;animation-delay:1.2s" src="assets/undangya/oasis-malam/pampas.webp" alt="">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-zoom" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 58C14 44 8 32 8 21a11 11 0 0 1 24-5 11 11 0 0 1 24 5c0 11-6 23-24 37z" fill="none" stroke="#f0d48a" stroke-width="3"/><circle cx="32" cy="27" r="5" fill="#d9ab4e"/></svg>
+        <p class="sec-kicker rv rv-right">DUA HATI · SATU OASIS</p>
+        <h2 class="sec-title rv rv-up">Mempelai</h2>
+        <p class="sec-sub rv rv-left">yang berbahagia</p>
+      </div>
+      <div class="couple-photo rv rv-zoom"><img src="assets/undangya/oasis-malam/hero.webp" alt="Pasangan Meyzsa dan Fahrezzi dalam busana Timur Tengah elegan di tepi kolam oasis malam"></div>
+      <div class="panel rv rv-left" style="text-align:center;margin-top:26px">
+        <div class="person-photo rv rv-up"><img src="assets/undangya/oasis-malam/bride.webp" alt="Mempelai wanita dalam gaun krem-emas dan hijab krem berkilau"></div>
+        <h3 class="pname rv rv-up">Meyzsa Putri Ananda, S.Pd.</h3>
+        <p class="txt rv rv-up">Putri dari Bapak H. Muhammad Ridwan<br>&amp; Ibu Hj. Siti Aminah</p>
+        <p class="rv rv-up" style="margin-top:8px"><a class="ig-link" href="https://instagram.com/meyzsa.contoh" target="_blank" rel="noopener">@meyzsa.contoh</a></p>
+      </div>
+      <div class="panel rv rv-right" style="text-align:center;margin-top:22px">
+        <div class="person-photo rv rv-up"><img src="assets/undangya/oasis-malam/groom.webp" alt="Mempelai pria dalam jas hitam-krem dan kemeja putih"></div>
+        <h3 class="pname rv rv-up">Ahmad Fahrezzi Pratama, S.T.</h3>
+        <p class="txt rv rv-up">Putra dari Bapak H. Bambang Sutrisno<br>&amp; Ibu Hj. Ratna Dewi</p>
+        <p class="rv rv-up" style="margin-top:8px"><a class="ig-link" href="https://instagram.com/fahrezzi.contoh" target="_blank" rel="noopener">@fahrezzi.contoh</a></p>
+      </div>
+    </section>
+
+    <!-- ================= 5. ACARA + 4. COUNTDOWN ================= -->
+    <section id="acara">
+      <div class="sec-petals" aria-hidden="true"></div>
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 56V30l18-18 18 18v26" fill="none" stroke="#f0d48a" stroke-width="3" stroke-linejoin="round"/><path d="M24 56V40a8 8 0 0 1 16 0v16" fill="none" stroke="#d9ab4e" stroke-width="3"/></svg>
+        <p class="sec-kicker rv rv-left">SAVE THE DATE</p>
+        <h2 class="sec-title rv rv-up">Rangkaian Acara</h2>
+      </div>
+      <div class="cd-row rv rv-zoom" role="timer" aria-label="Hitung mundur menuju hari bahagia">
+        <div class="cd-box"><div class="cd-num" id="cdD">0</div><div class="cd-lab">HARI</div></div>
+        <div class="cd-box"><div class="cd-num" id="cdH">00</div><div class="cd-lab">JAM</div></div>
+        <div class="cd-box"><div class="cd-num" id="cdM">00</div><div class="cd-lab">MENIT</div></div>
+        <div class="cd-box"><div class="cd-num" id="cdS">00</div><div class="cd-lab">DETIK</div></div>
+      </div>
+      <p class="rv rv-up" style="text-align:center;margin-top:12px"><span class="chip">MENGHITUNG HARI MENUJU SABTU, 12 JUNI 2027</span></p>
+      <div class="panel event-card rv rv-left" style="margin-top:28px">
+        <img class="event-img" src="assets/undangya/oasis-malam/bg-arch.webp" alt="Gerbang lengkung Arab di taman oasis malam">
+        <h3 class="event-title rv rv-up">Akad Nikah</h3>
+        <p class="txt rv rv-up" style="margin-top:8px">Sabtu, 12 Juni 2027<br>08.00 – 10.00 WIB<br><b>Masjid Agung Al-Azhar</b><br>Jakarta Selatan</p>
+        <div class="btn-row rv rv-up">
+          <a class="btn" href="https://maps.google.com/?q=Masjid+Agung+Al-Azhar+Jakarta+Selatan" target="_blank" rel="noopener">GOOGLE MAPS</a>
+          <a class="btn btn-alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Akad+Nikah+Meyzsa+%26+Fahrezzi&amp;dates=20270612T010000Z%2F20270612T030000Z&amp;details=Akad+Nikah+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=Masjid+Agung+Al-Azhar%2C+Kebayoran+Baru%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KALENDER</a>
+          <button class="btn btn-alt" type="button" data-ics data-start="20270612T010000Z" data-end="20270612T030000Z" data-title="Akad Nikah Meyzsa &amp; Fahrezzi" data-loc="Masjid Agung Al-Azhar, Jakarta Selatan" data-desc="Akad Nikah Meyzsa Putri Ananda &amp; Ahmad Fahrezzi Pratama" data-file="akad-meyzsa-fahrezzi">UNDUH .ICS</button>
+        </div>
+      </div>
+      <div class="panel event-card rv rv-right" style="margin-top:22px">
+        <img class="event-img" src="assets/undangya/oasis-malam/bg-tent.webp" alt="Tenda malam Timur Tengah berlentera emas">
+        <h3 class="event-title rv rv-up">Resepsi</h3>
+        <p class="txt rv rv-up" style="margin-top:8px">Sabtu, 12 Juni 2027<br>11.00 – 13.00 WIB<br><b>The Ritz-Carlton Jakarta, Pacific Place</b><br>Jakarta Selatan</p>
+        <div class="btn-row rv rv-up">
+          <a class="btn" href="https://maps.google.com/?q=The+Ritz-Carlton+Jakarta+Pacific+Place" target="_blank" rel="noopener">GOOGLE MAPS</a>
+          <a class="btn btn-alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Resepsi+Meyzsa+%26+Fahrezzi&amp;dates=20270612T040000Z%2F20270612T060000Z&amp;details=Resepsi+Pernikahan+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=The+Ritz-Carlton+Jakarta%2C+Pacific+Place%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KALENDER</a>
+          <button class="btn btn-alt" type="button" data-ics data-start="20270612T040000Z" data-end="20270612T060000Z" data-title="Resepsi Meyzsa &amp; Fahrezzi" data-loc="The Ritz-Carlton Jakarta, Pacific Place, Jakarta Selatan" data-desc="Resepsi Pernikahan Meyzsa Putri Ananda &amp; Ahmad Fahrezzi Pratama" data-file="resepsi-meyzsa-fahrezzi">UNDUH .ICS</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. GALERI ================= -->
+    <section id="galeri">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-drop" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6c4 10 4 16 0 24-4-8-4-14 0-24z" fill="#7fb069"/><path d="M14 16c9 4 13 9 16 16-9-1-14-6-16-16zM50 16c-9 4-13 9-16 16 9-1 14-6 16-16z" fill="#5d8f4e"/><path d="M32 30v24M22 54h20" stroke="#f0d48a" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+        <p class="sec-kicker rv rv-right">GALERI OASIS</p>
+        <h2 class="sec-title rv rv-up">Galeri Kami</h2>
+        <p class="sec-sub rv rv-left">geser kanan–kiri · ketuk foto untuk memperbesar</p>
+      </div>
+      <div class="rail" id="railMain">
+        <div class="gal-slide frame-arch rv rv-left"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-1.webp" alt="Pasangan di tepi kolam oasis malam"><p class="gal-cap">Tepi kolam oasis</p></div>
+        <div class="gal-slide frame-arch rv rv-up"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-2.webp" alt="Pasangan di bawah palem senja"><p class="gal-cap">Bawah palem senja</p></div>
+        <div class="gal-slide frame-arch rv rv-right"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-3.webp" alt="Pasangan di tenda malam berlentera"><p class="gal-cap">Tenda malam berlentera</p></div>
+        <div class="gal-slide frame-arch rv rv-zoom"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-4.webp" alt="Pasangan di bukit pasir senja"><p class="gal-cap">Bukit pasir senja</p></div>
+      </div>
+      <div class="rail-meta rv rv-up"><div class="dots" id="dotsMain"></div><span class="frac" id="fracMain">1 / 4</span></div>
+      <div class="rail" id="railSub" style="margin-top:22px">
+        <div class="gal-slide frame-none rv rv-right"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-5.webp" alt="Pasangan di pasar malam berlampu gantung"><p class="gal-cap">Pasar malam</p></div>
+        <div class="gal-slide frame-none rv rv-up"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-6.webp" alt="Pasangan di gerbang lengkung Arab"><p class="gal-cap">Gerbang lengkung Arab</p></div>
+        <div class="gal-slide frame-none rv rv-left"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-7.webp" alt="Pasangan di teras malam berbintang"><p class="gal-cap">Teras malam berbintang</p></div>
+        <div class="gal-slide frame-none rv rv-zoom"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-8.webp" alt="Pasangan dengan karavan unta siluet di kejauhan"><p class="gal-cap">Karavan unta di kejauhan</p></div>
+      </div>
+      <div class="rail-meta rv rv-up"><div class="dots" id="dotsSub"></div><span class="frac" id="fracSub">1 / 4</span></div>
+    </section>
+
+    <!-- ================= 7. LOVE STORY ================= -->
+    <section id="kisah">
+      <img class="decor-side" style="right:-3%;bottom:2%;width:27%" src="assets/undangya/oasis-malam/bloom-gurun.webp" alt="">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot2" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 46c10-2 14-8 16-18l4-14c1-4 7-4 8 0l4 14c2 10 6 16 16 18-8 6-16 4-24-2-8 6-16 8-24 2z" fill="#d9ab4e"/><circle cx="32" cy="10" r="3.4" fill="#f0d48a"/><path d="M20 50h24" stroke="#f0d48a" stroke-width="3" stroke-linecap="round"/></svg>
+        <p class="sec-kicker rv rv-left">KARAVAN KISAH KAMI</p>
+        <h2 class="sec-title rv rv-up">Love Story</h2>
+      </div>
+      <div class="story-item rv rv-left"><div class="story-year">2019</div><div class="story-body"><h3>Awal Bertemu</h3><p>Di sebuah acara kampus di Jakarta, Meyzsa dan Fahrezzi pertama kali berbincang — obrolan singkat tentang buku dan perjalanan yang terasa seperti menemukan mata air pertama di tengah gurun: segar dan tak terduga.</p></div></div>
+      <div class="story-item rv rv-right"><div class="story-year">2023</div><div class="story-body"><h3>Lamaran</h3><p>Empat tahun saling mengenal, Fahrezzi memberanikan diri melamar Meyzsa di hadapan keluarga terdekat. Di bawah langit senja, jawaban “iya” menjadi lentera pertama yang menerangi perjalanan kami.</p></div></div>
+      <div class="story-item rv rv-left"><div class="story-year">2025</div><div class="story-body"><h3>Menyatukan Dua Keluarga</h3><p>Dua keluarga besar akhirnya duduk bersama dalam kehangatan silaturahmi. Seperti dua karavan yang bertemu di oasis yang sama, restu pun mengalir jernih dari kedua belah pihak.</p></div></div>
+      <div class="story-item rv rv-right"><div class="story-year">2027</div><div class="story-body"><h3>Hari Bahagia</h3><p>Kini perjalanan itu tiba di tujuan terindahnya. Dengan doa restu Anda, kami memulai babak baru — selamanya berjalan berdua, di bawah langit berbintang yang sama.</p></div></div>
+    </section>
+
+    <!-- ================= 8. DRESSCODE ================= -->
+    <section id="dresscode">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-zoom" viewBox="0 0 64 64" aria-hidden="true"><path d="M20 10h24l4 10-8 4v30H24V24l-8-4z" fill="none" stroke="#f0d48a" stroke-width="3" stroke-linejoin="round"/><path d="M26 10c0 5 12 5 12 0" fill="none" stroke="#d9ab4e" stroke-width="3"/></svg>
+        <p class="sec-kicker rv rv-right">GAYA TAMU</p>
+        <h2 class="sec-title rv rv-up">Dresscode</h2>
+        <p class="sec-sub rv rv-left">nuansa malam oasis</p>
+      </div>
+      <div class="panel rv rv-up" style="text-align:center">
+        <div class="rv rv-zoom" style="display:flex;gap:14px;justify-content:center;margin-bottom:16px">
+          <span class="swatch" style="background:#171040" title="Biru malam"></span>
+          <span class="swatch" style="background:#3b2566;animation-delay:.4s" title="Ungu senja"></span>
+          <span class="swatch" style="background:#d9ab4e;animation-delay:.8s" title="Emas lentera"></span>
+          <span class="swatch" style="background:#e8cf9f;animation-delay:1.2s" title="Pasir hangat"></span>
+          <span class="swatch" style="background:#7fb069;animation-delay:1.6s" title="Hijau palem"></span>
+        </div>
+        <p class="txt rv rv-up">Kami mengundang Anda mengenakan busana bernuansa palet di atas. Hindari warna putih polos agar mempelai tetap menjadi bintang utama malam itu.</p>
+        <p class="rv rv-up" style="margin-top:14px"><span class="chip">BIRU MALAM</span> <span class="chip">UNGU SENJA</span> <span class="chip">EMAS LENTERA</span> <span class="chip">PASIR HANGAT</span> <span class="chip">HIJAU PALEM</span></p>
+      </div>
+    </section>
+
+    <!-- ================= 9. DENAH & INFO LOKASI ================= -->
+    <section id="denah">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-drop" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 58S14 40 14 26a18 18 0 0 1 36 0c0 14-18 32-18 32z" fill="none" stroke="#f0d48a" stroke-width="3"/><circle cx="32" cy="26" r="7" fill="#d9ab4e"/></svg>
+        <p class="sec-kicker rv rv-left">PETA &amp; PETUNJUK</p>
+        <h2 class="sec-title rv rv-up">Denah &amp; Info Lokasi</h2>
+      </div>
+      <img class="strip-img rv rv-zoom" src="assets/undangya/oasis-malam/bg-camel.webp" alt="Karavan unta melintasi bukit pasir senja menuju oasis">
+      <div class="panel rv rv-left" style="margin-top:20px">
+        <h3 class="rv rv-up" style="color:var(--gold-pale);font-size:18px">Akad — Masjid Agung Al-Azhar, Jakarta Selatan</h3>
+        <p class="txt rv rv-up" style="margin-top:6px">Area parkir tersedia di lingkungan masjid. Tamu disarankan tiba 30 menit lebih awal; pintu masuk utama dari sisi jalan besar, ikuti penunjuk arah berwarna emas.</p>
+        <div class="btn-row rv rv-up"><a class="btn" href="https://maps.google.com/?q=Masjid+Agung+Al-Azhar+Jakarta+Selatan" target="_blank" rel="noopener">BUKA PETA</a><a class="btn btn-alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Akad+Nikah+Meyzsa+%26+Fahrezzi&amp;dates=20270612T010000Z%2F20270612T030000Z&amp;details=Akad+Nikah+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=Masjid+Agung+Al-Azhar%2C+Kebayoran+Baru%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KE KALENDER</a></div>
+      </div>
+      <div class="panel rv rv-right" style="margin-top:18px">
+        <h3 class="rv rv-up" style="color:var(--gold-pale);font-size:18px">Resepsi — The Ritz-Carlton Jakarta, Pacific Place</h3>
+        <p class="txt rv rv-up" style="margin-top:6px">Valet parking tersedia di lobi utama Pacific Place. Ballroom berada di area hotel; petugas penerima tamu berlentera emas akan mengarahkan Anda dari lobi.</p>
+        <div class="btn-row rv rv-up"><a class="btn" href="https://maps.google.com/?q=The+Ritz-Carlton+Jakarta+Pacific+Place" target="_blank" rel="noopener">BUKA PETA</a><a class="btn btn-alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Resepsi+Meyzsa+%26+Fahrezzi&amp;dates=20270612T040000Z%2F20270612T060000Z&amp;details=Resepsi+Pernikahan+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=The+Ritz-Carlton+Jakarta%2C+Pacific+Place%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KE KALENDER</a></div>
+      </div>
+    </section>
+
+    <!-- ================= 10. VIDEO TEASER ================= -->
+    <section id="cuplikan">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="16" width="48" height="34" rx="7" fill="none" stroke="#f0d48a" stroke-width="3"/><path d="M28 26l14 8-14 8z" fill="#d9ab4e"/></svg>
+        <p class="sec-kicker rv rv-right">CUPLIKAN</p>
+        <h2 class="sec-title rv rv-up">Video Teaser</h2>
+        <p class="sec-sub rv rv-left">Video teaser — contoh</p>
+      </div>
+      <div class="vid-wrap rv rv-zoom" id="vidWrap">
+        <video id="teaserVideo" preload="none" playsinline controls poster="assets/undangya/oasis-malam/teaser-poster.webp" src="assets/undangya/oasis-malam/teaser.mp4"></video>
+        <button id="vidBtn" type="button" aria-label="Putar video teaser">▶</button>
+      </div>
+      <p class="small-note rv rv-up" style="text-align:center;margin-top:12px;background:rgba(10,6,36,.7);border-radius:10px;padding:6px 12px">Video teaser — contoh, dirangkai dari foto tema dengan musik “Petals on the Stone Floor”.</p>
+    </section>
+
+    <!-- ================= 11. LIVE STREAMING ================= -->
+    <section id="live">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-drop" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="6" fill="#e4572e"/><path d="M20 20a17 17 0 0 0 0 24M44 20a17 17 0 0 1 0 24M13 13a27 27 0 0 0 0 38M51 13a27 27 0 0 1 0 38" fill="none" stroke="#f0d48a" stroke-width="3" stroke-linecap="round"/></svg>
+        <p class="sec-kicker rv rv-left">DARI KEJAUHAN</p>
+        <h2 class="sec-title rv rv-up">Live Streaming</h2>
+      </div>
+      <div class="panel rv rv-up" style="text-align:center">
+        <p class="txt rv rv-up">Bagi Bapak/Ibu/Saudara/i yang berhalangan hadir, rangkaian acara direncanakan disiarkan langsung. Tombol di bawah ini adalah contoh (demo) — tautan siaran sungguhan dibagikan menjelang hari acara.</p>
+        <div class="btn-row rv rv-up"><button class="btn" type="button" onclick="alert('Demo: tautan live streaming akan dibagikan menjelang hari acara.')">TONTON LIVE (DEMO)</button></div>
+      </div>
+    </section>
+
+    <!-- ================= 12. RSVP + DINDING UCAPAN ================= -->
+    <section id="rsvp">
+      <div class="sec-petals" aria-hidden="true"></div>
+      <img class="decor-hang" style="top:0;left:2%;width:15%" src="assets/undangya/oasis-malam/lentera-bank.webp" alt="">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-zoom" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 22h44v30H10zM10 22l22 16 22-16" fill="none" stroke="#f0d48a" stroke-width="3" stroke-linejoin="round"/><path d="M46 8l1.6 4.4L52 14l-4.4 1.6L46 20l-1.6-4.4L40 14l4.4-1.6z" fill="#fdf0cd"/></svg>
+        <p class="sec-kicker rv rv-right">KONFIRMASI &amp; DOA</p>
+        <h2 class="sec-title rv rv-up">RSVP &amp; Ucapan</h2>
+        <p class="sec-sub rv rv-left">demo — tersimpan di perangkat ini saja</p>
+      </div>
+      <form id="rsvpForm" class="panel rv rv-left">
+        <label class="flab" for="rsvpName">NAMA</label>
+        <input id="rsvpName" type="text" placeholder="Nama Anda" autocomplete="name">
+        <label class="flab" for="rsvpAttend">KEHADIRAN</label>
+        <select id="rsvpAttend"><option>Hadir</option><option>Berhalangan</option><option>Masih Ragu</option></select>
+        <label class="flab" for="rsvpMsg">UCAPAN &amp; DOA</label>
+        <textarea id="rsvpMsg" placeholder="Tulis ucapan dan doa terbaik Anda…"></textarea>
+        <button class="btn" type="submit">KIRIM UCAPAN (DEMO)</button>
+      </form>
+      <div id="guestbookList" style="margin-top:20px;position:relative;z-index:2" class="rv rv-up"></div>
+    </section>
+
+    <!-- ================= 13. BUKU TAMU & QR + 16. HASHTAG & GALERI TAMU ================= -->
+    <section id="bukutamu">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-rot2" viewBox="0 0 64 64" aria-hidden="true"><path d="M22 10h20v10H22zM14 22h36v32H14z" fill="none" stroke="#f0d48a" stroke-width="3" stroke-linejoin="round"/><path d="M24 32h16M24 40h16M24 48h10" stroke="#d9ab4e" stroke-width="3" stroke-linecap="round"/></svg>
+        <p class="sec-kicker rv rv-left">CHECK-IN DI LOKASI</p>
+        <h2 class="sec-title rv rv-up">Buku Tamu &amp; QR Check-in</h2>
+        <p class="sec-sub rv rv-right">tunjukkan QR ini saat tiba</p>
+      </div>
+      <div class="panel rv rv-zoom" style="text-align:center">
+        <img class="qr-img rv rv-up" src="assets/undangya/oasis-malam/qr-undangan.webp" alt="Kode QR menuju halaman undangan Oasis Malam">
+        <p class="small-note rv rv-up" style="margin-top:12px">QR statis menuju halaman undangan ini:<br>https://yfarch0912.github.io/oasis-malam-preview/oasis-malam.html</p>
+      </div>
+      <form id="ciForm" class="panel rv rv-right" style="margin-top:20px">
+        <label class="flab" for="ciName">NAMA TAMU</label>
+        <input id="ciName" type="text" placeholder="Nama Anda" autocomplete="name">
+        <label class="flab" for="ciSesi">SESI</label>
+        <select id="ciSesi"><option>Akad Nikah</option><option>Resepsi</option></select>
+        <button class="btn" type="submit">CHECK-IN (DEMO)</button>
+      </form>
+      <div id="ciList" style="margin-top:20px;position:relative;z-index:2" class="rv rv-up"></div>
+      <div class="panel rv rv-left" style="margin-top:26px;text-align:center">
+        <h3 class="rv rv-up" style="color:var(--gold-pale);font-size:20px">Hashtag Kami</h3>
+        <p class="script rv rv-zoom" style="font-size:36px;color:var(--gold-pale);margin-top:6px">#MeyzsaFahrezzi</p>
+        <div class="btn-row rv rv-up"><button class="btn btn-alt" type="button" data-copytext="#MeyzsaFahrezzi">SALIN HASHTAG</button></div>
+        <p class="txt rv rv-up" style="margin-top:14px">Bagikan momen Anda dengan hashtag di atas. Unggah juga foto Anda di bawah ini — tersimpan sebagai contoh di perangkat ini saja (localStorage).</p>
+        <label class="btn rv rv-up" style="margin-top:14px;cursor:pointer">UNGGAH FOTO TAMU (CONTOH)<input id="gtInput" type="file" accept="image/*" multiple hidden></label>
+        <p class="small-note rv rv-up" id="gtEmpty" style="margin-top:14px">Belum ada foto tamu — jadilah yang pertama mengunggah (contoh).</p>
+        <div class="gt-grid rv rv-up" id="gtGrid" style="margin-top:14px"></div>
+      </div>
+    </section>
+
+    <!-- ================= 14. AMPLOP + 15. KADO FISIK ================= -->
+    <section id="amplop">
+      <img class="decor-side" style="left:-3%;top:8%;width:26%" src="assets/undangya/oasis-malam/flw-kamboja.webp" alt="">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-drop" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="20" width="44" height="30" rx="5" fill="none" stroke="#f0d48a" stroke-width="3"/><path d="M10 24l22 15 22-15" fill="none" stroke="#d9ab4e" stroke-width="3"/><circle cx="32" cy="40" r="4" fill="#f0d48a"/></svg>
+        <p class="sec-kicker rv rv-right">TANDA KASIH</p>
+        <h2 class="sec-title rv rv-up">Amplop Digital</h2>
+        <p class="sec-sub rv rv-left">nomor contoh (demo)</p>
+      </div>
+      <div class="panel rv rv-left">
+        <p class="rv rv-up" style="font-size:12px;letter-spacing:.24em;color:var(--gold-pale);font-weight:700">BCA — A.N. MEYZSA PUTRI ANANDA</p>
+        <div class="acc-row rv rv-up" style="margin-top:10px"><span class="acc-num" id="accBca">1234567890</span><button class="copy-btn" type="button" data-copy="accBca">SALIN</button></div>
+        <p class="rv rv-up" style="font-size:12px;letter-spacing:.24em;color:var(--gold-pale);font-weight:700">DANA — A.N. MEYZSA PUTRI ANANDA</p>
+        <div class="acc-row rv rv-up" style="margin-top:10px"><span class="acc-num" id="accDana">0812-3456-7890</span><button class="copy-btn" type="button" data-copy="accDana">SALIN</button></div>
+        <p class="small-note rv rv-up">Seluruh nomor di atas adalah nomor contoh untuk keperluan demo tema.</p>
+      </div>
+      <div class="panel rv rv-right" style="margin-top:20px">
+        <h3 class="rv rv-up" style="color:var(--gold-pale);font-size:19px;text-align:center">Kirim Kado Fisik</h3>
+        <p class="txt rv rv-up" style="text-align:center;margin-top:8px">Kediaman Mempelai Wanita (alamat contoh)<br>Jl. Contoh Oasis No. 12, Jakarta Selatan 12180</p>
+        <div class="btn-row rv rv-up"><button class="btn btn-alt" type="button" data-copytext="Jl. Contoh Oasis No. 12, Jakarta Selatan 12180">SALIN ALAMAT</button></div>
+      </div>
+    </section>
+
+    <!-- ================= 17. TURUT MENGUNDANG ================= -->
+    <section id="turut">
+      <div class="sec-head">
+        <svg class="sec-icon rv rv-zoom" viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="22" r="7" fill="none" stroke="#f0d48a" stroke-width="3"/><circle cx="44" cy="22" r="7" fill="none" stroke="#f0d48a" stroke-width="3"/><path d="M8 50c2-9 8-13 14-13s12 4 14 13M30 50c2-8 7-12 14-12" fill="none" stroke="#d9ab4e" stroke-width="3" stroke-linecap="round"/></svg>
+        <p class="sec-kicker rv rv-left">KELUARGA BESAR</p>
+        <h2 class="sec-title rv rv-up">Turut Mengundang</h2>
+      </div>
+      <div class="panel rv rv-up" style="text-align:center">
+        <p class="txt rv rv-up">Keluarga Besar H. Muhammad Ridwan &amp; Hj. Siti Aminah<br>Keluarga Besar H. Bambang Sutrisno &amp; Hj. Ratna Dewi<br>Segenap kerabat dan sahabat kedua mempelai</p>
+        <p class="rv rv-up" style="margin-top:14px"><span class="chip">DENGAN HORMAT &amp; PENUH SYUKUR</span></p>
+      </div>
+    </section>
+
+    <!-- ================= 18-19. PENUTUP ================= -->
+    <section id="penutup" style="text-align:center">
+      <div class="world-bg2" aria-hidden="true"><img src="assets/undangya/oasis-malam/bg-world.webp" alt=""></div>
+      <div class="sec-petals" aria-hidden="true"></div>
+      <img class="decor-hang" style="top:-6px;left:4%;width:16%" src="assets/undangya/oasis-malam/lentera-bank.webp" alt="">
+      <img class="decor-hang" style="top:-6px;right:4%;width:16%;animation-delay:1s" src="assets/undangya/oasis-malam/lentera-bank.webp" alt="">
+      <div class="panel panel-glass rv rv-zoom" style="padding:30px 22px 26px">
+        <svg class="sec-icon rv rv-drop" viewBox="0 0 64 64" aria-hidden="true" style="width:64px;height:64px"><path d="M42 6a26 26 0 1 0 16 40A30 30 0 0 1 42 6z" fill="#f0d48a"/><path d="M16 48c6-8 12-12 16-12s10 4 16 12" fill="none" stroke="#7fb069" stroke-width="3" stroke-linecap="round"/></svg>
+        <p class="txt rv rv-up" style="max-width:320px;margin:6px auto 0">Merupakan suatu kehormatan dan kebahagiaan bagi kami beserta keluarga apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai.</p>
+        <p class="rv rv-up" style="margin-top:16px;font-size:12px;letter-spacing:.3em;color:var(--gold-pale);font-weight:700">KAMI YANG BERBAHAGIA</p>
+        <div class="penutup-names rv rv-zoom" style="margin-top:6px">Meyzsa &amp; Fahrezzi</div>
+        <p class="rv rv-up" style="margin-top:12px;font-style:italic;font-size:16px;color:var(--paper)">…dan di bawah bintang yang sama, kisah oasis ini pun dimulai.</p>
+        <p class="txt rv rv-up" style="margin-top:14px">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+      </div>
+    </section>
+    <p class="foot-note">Undangan digital contoh “Oasis Malam” oleh UndangYa! — seluruh nama, tanggal, dan nomor adalah data contoh.<br>Musik latar: “Petals on the Stone Floor”.</p>
+  </main>
+</div>
+
+<button id="btnMusic" type="button" aria-label="Putar atau hentikan musik latar">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18.5V6l10-2v11.5" stroke="#f0d48a" stroke-width="1.7" stroke-linejoin="round"/><circle cx="6.8" cy="18.5" r="2.6" fill="#f0d48a"/><circle cx="16.8" cy="15.5" r="2.6" fill="#f0d48a"/></svg>
+</button>
+<div id="lightbox" role="dialog" aria-label="Foto galeri diperbesar"><img id="lbImg" src="" alt="Foto galeri diperbesar"></div>
+<audio id="bgmShared" loop preload="none" src="assets/audio/petals-on-the-stone-floor.mp3"></audio>
+
+<script>
+(function(){
+  "use strict";
+  var params=new URLSearchParams(window.location.search);
+  var guest=(params.get("to")||"").trim();
+  if(guest){document.getElementById("guestName").textContent=guest;}
+  var reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var scene=document.getElementById("scene");
+  if(!reduced){
+    for(var i=0;i<30;i++){
+      var s=document.createElement("span"); s.className="star";
+      var sz=(Math.random()*2.6+1.4).toFixed(1);
+      s.style.cssText="left:"+(Math.random()*96+2)+"%;top:"+(Math.random()*36+2)+"%;width:"+sz+"px;height:"+sz+"px;animation-delay:"+(Math.random()*2.4).toFixed(2)+"s";
+      scene.appendChild(s);
+    }
+    var ffField=document.getElementById("fflyCover");
+    if(ffField){
+      for(var ffi=0;ffi<18;ffi++){
+        var fsp=document.createElement("span"); fsp.className="ffly";
+        var fsz=(7+Math.random()*9).toFixed(0);
+        fsp.style.cssText="left:"+(2+Math.random()*94).toFixed(1)+"%;top:"+(36+Math.random()*58).toFixed(1)+"%;width:"+fsz+"px;height:"+fsz+"px";
+        fsp.style.setProperty("--fd",(8+Math.random()*7).toFixed(1)+"s");
+        fsp.style.setProperty("--fdl",(-Math.random()*14).toFixed(1)+"s");
+        var fin=document.createElement("i");
+        fin.style.setProperty("--ft",(1.4+Math.random()*1.5).toFixed(2)+"s");
+        fsp.appendChild(fin); ffField.appendChild(fsp);
+      }
+    }
+  }
+  var PETALIMG="assets/undangya/oasis-malam/petal.webp";
+  function makePetalsCss(field,count){
+    if(reduced||!field)return;
+    for(var i=0;i<count;i++){
+      var img=document.createElement("img");
+      img.className="petal"; img.src=PETALIMG; img.alt="";
+      var dur=11+Math.random()*11, drop=26+Math.random()*64, bob=8+Math.random()*12;
+      img.style.width=(13+Math.random()*12).toFixed(0)+"px";
+      img.style.setProperty("--pt",(3+Math.random()*60).toFixed(1)+"%");
+      img.style.setProperty("--pd",dur.toFixed(1)+"s");
+      img.style.setProperty("--pdl",(-Math.random()*dur).toFixed(1)+"s");
+      img.style.setProperty("--y25",(drop*.25+bob).toFixed(0)+"px");
+      img.style.setProperty("--y50",(drop*.5-bob*.4).toFixed(0)+"px");
+      img.style.setProperty("--y75",(drop*.75+bob).toFixed(0)+"px");
+      img.style.setProperty("--ye",drop.toFixed(0)+"px");
+      field.appendChild(img);
+    }
+  }
+  if(!reduced){
+    makePetalsCss(document.getElementById("petalCover"),16);
+    document.querySelectorAll(".sec-petals").forEach(function(f){makePetalsCss(f,7);});
+  }
+  var audio=document.getElementById("bgmShared"), btnMusic=document.getElementById("btnMusic"), opened=false;
+  function tryPlay(){var pr=audio.play(); if(pr&&pr.catch)pr.catch(function(){}); btnMusic.classList.add("playing");}
+  document.getElementById("btnOpen").addEventListener("click",function(){
+    if(opened)return; opened=true;
+    document.body.classList.add("opening"); tryPlay();
+    setTimeout(function(){
+      document.body.classList.remove("opening"); document.body.classList.add("opened");
+      document.getElementById("cover").style.display="none";
+      window.scrollTo(0,0); initReveal();
+    }, reduced?60:1120);
+  });
+  btnMusic.addEventListener("click",function(){
+    if(audio.paused){tryPlay();}else{audio.pause();btnMusic.classList.remove("playing");}
+  });
+  var target=new Date("2027-06-12T08:00:00+07:00").getTime();
+  var els={d:document.getElementById("cdD"),h:document.getElementById("cdH"),m:document.getElementById("cdM"),s:document.getElementById("cdS")};
+  function setNum(el,v){if(el.textContent!==String(v)){el.textContent=v;el.classList.remove("pop");void el.offsetWidth;el.classList.add("pop");}}
+  function cd(){
+    var diff=Math.max(0,target-Date.now()), d=Math.floor(diff/864e5), h=Math.floor(diff/36e5)%24, m=Math.floor(diff/6e4)%60, s=Math.floor(diff/1e3)%60;
+    setNum(els.d,d);setNum(els.h,String(h).padStart(2,"0"));setNum(els.m,String(m).padStart(2,"0"));setNum(els.s,String(s).padStart(2,"0"));
+  }
+  cd(); setInterval(cd,1000);
+  var io=null;
+  function initReveal(){
+    var items=document.querySelectorAll(".rv");
+    if(!("IntersectionObserver" in window)||reduced){items.forEach(function(e){e.classList.add("in")});return;}
+    io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}});},{threshold:.12});
+    items.forEach(function(e){io.observe(e);});
+  }
+  var plxEls=Array.prototype.slice.call(document.querySelectorAll("[data-plx]"));
+  var ticking=false;
+  window.addEventListener("scroll",function(){
+    if(reduced||ticking)return; ticking=true;
+    requestAnimationFrame(function(){
+      var vh=window.innerHeight;
+      plxEls.forEach(function(el){
+        var r=el.getBoundingClientRect(); if(r.bottom<-80||r.top>vh+80)return;
+        var sp=parseFloat(el.getAttribute("data-plx"))||8, off=((r.top+r.height/2)-vh/2)/vh*sp;
+        el.style.translate="0 "+off.toFixed(1)+"px";
+      });
+      ticking=false;
+    });
+  },{passive:true});
+  function initRail(railId,fracId,dotsId){
+    var rail=document.getElementById(railId); if(!rail)return;
+    var slides=rail.querySelectorAll(".gal-slide"), frac=document.getElementById(fracId), dots=document.getElementById(dotsId);
+    for(var i=0;i<slides.length;i++){var d=document.createElement("i"); if(i===0)d.className="on"; dots.appendChild(d);}
+    function upd(){
+      var idx=0,best=1e12;
+      slides.forEach(function(s,k){var dd=Math.abs(s.offsetLeft-rail.scrollLeft-4); if(dd<best){best=dd;idx=k;}});
+      frac.textContent=(idx+1)+" / "+slides.length;
+      Array.prototype.forEach.call(dots.children,function(dt,k){dt.className=k===idx?"on":"";});
+    }
+    rail.addEventListener("scroll",function(){requestAnimationFrame(upd);},{passive:true});
+    upd();
+    var down=false,startX=0,startL=0,moved=false;
+    rail.addEventListener("pointerdown",function(e){if(e.pointerType!=="mouse")return;down=true;moved=false;startX=e.clientX;startL=rail.scrollLeft;rail.classList.add("dragging");});
+    window.addEventListener("pointermove",function(e){if(!down)return;var dx=e.clientX-startX;if(Math.abs(dx)>6)moved=true;rail.scrollLeft=startL-dx;});
+    window.addEventListener("pointerup",function(){if(down){down=false;rail.classList.remove("dragging");setTimeout(function(){moved=false;},50);}});
+    rail.addEventListener("click",function(e){if(moved){e.preventDefault();e.stopPropagation();}},true);
+  }
+  initRail("railMain","fracMain","dotsMain");
+  initRail("railSub","fracSub","dotsSub");
+  var lb=document.getElementById("lightbox"), lbImg=document.getElementById("lbImg");
+  document.querySelectorAll(".gal-photo").forEach(function(img){
+    img.addEventListener("click",function(){ lbImg.src=img.src; lb.classList.add("on"); });
+  });
+  lb.addEventListener("click",function(){lb.classList.remove("on");lbImg.src="";});
+  document.querySelectorAll(".copy-btn").forEach(function(b){
+    b.addEventListener("click",function(){
+      var txt=document.getElementById(b.getAttribute("data-copy")).textContent.trim();
+      function done(){var o=b.textContent;b.textContent="TERSALIN ✓";setTimeout(function(){b.textContent=o;},1600);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done).catch(done);}else{done();}
+    });
+  });
+  document.querySelectorAll("[data-copytext]").forEach(function(b){
+    b.addEventListener("click",function(){
+      var txt=b.getAttribute("data-copytext");
+      function done(){var o=b.textContent;b.textContent="TERSALIN ✓";setTimeout(function(){b.textContent=o;},1600);}
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done).catch(done);}else{done();}
+    });
+  });
+  function icsEsc(s){return String(s).replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\n/g,"\\n");}
+  document.querySelectorAll("[data-ics]").forEach(function(b){
+    b.addEventListener("click",function(){
+      var pad=function(n){return String(n).padStart(2,"0");}, now=new Date();
+      var stamp=now.getUTCFullYear()+pad(now.getUTCMonth()+1)+pad(now.getUTCDate())+"T"+pad(now.getUTCHours())+pad(now.getUTCMinutes())+pad(now.getUTCSeconds())+"Z";
+      var ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//UndangYa//MenuLengkap//ID","BEGIN:VEVENT",
+        "UID:"+Date.now()+"@undangya.web.id","DTSTAMP:"+stamp,
+        "DTSTART:"+b.getAttribute("data-start"),"DTEND:"+b.getAttribute("data-end"),
+        "SUMMARY:"+icsEsc(b.getAttribute("data-title")||""),
+        "LOCATION:"+icsEsc(b.getAttribute("data-loc")||""),
+        "DESCRIPTION:"+icsEsc(b.getAttribute("data-desc")||""),
+        "END:VEVENT","END:VCALENDAR"].join("\r\n");
+      var blob=new Blob([ics],{type:"text/calendar"}), u=URL.createObjectURL(blob);
+      var a=document.createElement("a"); a.href=u; a.download=(b.getAttribute("data-file")||"acara")+".ics";
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){URL.revokeObjectURL(u);},4000);
+    });
+  });
+  (function(){
+    var wrap=document.getElementById("vidWrap"); if(!wrap)return;
+    var v=document.getElementById("teaserVideo"), btn=document.getElementById("vidBtn");
+    if(!v||!btn)return;
+    function sync(){var playing=!v.paused&&!v.ended; wrap.classList.toggle("playing",playing); btn.textContent=playing?"❚❚":"▶";}
+    btn.addEventListener("click",function(){ if(v.paused||v.ended){v.play();}else{v.pause();} });
+    v.addEventListener("play",sync); v.addEventListener("pause",sync); v.addEventListener("ended",sync); sync();
+    if("IntersectionObserver" in window){ new IntersectionObserver(function(es){es.forEach(function(en){ if(!en.isIntersecting&&!v.paused){v.pause();} });},{threshold:.15}).observe(v); }
+  })();
+  var GTKEY="oasis-malam-galeri-tamu-v1", gtGrid=document.getElementById("gtGrid"), gtEmpty=document.getElementById("gtEmpty"), gtInput=document.getElementById("gtInput");
+  function gtLoad(){try{var v=JSON.parse(localStorage.getItem(GTKEY));if(Array.isArray(v))return v;}catch(e){} return [];}
+  function gtSave(items){try{localStorage.setItem(GTKEY,JSON.stringify(items));return true;}catch(e){return false;}}
+  function gtRender(items){ if(!gtGrid)return; gtGrid.innerHTML="";
+    items.forEach(function(src,i){ var d=document.createElement("div");d.className="gt-item";
+      var im=document.createElement("img");im.src=src;im.alt="Foto galeri tamu "+(i+1);im.loading="lazy";
+      var b=document.createElement("button");b.className="gt-del";b.type="button";b.setAttribute("data-i",i);b.setAttribute("aria-label","Hapus foto");b.textContent="×";
+      d.appendChild(im);d.appendChild(b);gtGrid.appendChild(d);});
+    if(gtEmpty)gtEmpty.style.display=items.length?"none":""; }
+  var gtItems=gtLoad(); gtRender(gtItems);
+  if(gtGrid)gtGrid.addEventListener("click",function(e){ var b=e.target.closest(".gt-del"); if(!b)return;
+    gtItems.splice(parseInt(b.getAttribute("data-i"),10),1); gtSave(gtItems); gtRender(gtItems); });
+  if(gtInput)gtInput.addEventListener("change",function(){
+    var files=Array.prototype.slice.call(gtInput.files||[]).filter(function(f){return f.type.indexOf("image/")===0;});
+    if(!files.length)return;
+    var pending=files.length;
+    function done(){ if(--pending===0){ gtRender(gtItems); gtInput.value=""; } }
+    files.forEach(function(f){
+      var url=URL.createObjectURL(f), img=new Image();
+      img.onload=function(){ URL.revokeObjectURL(url);
+        var max=900, sc=Math.min(1,max/Math.max(img.naturalWidth||max,img.naturalHeight||max));
+        var cv=document.createElement("canvas");
+        cv.width=Math.max(1,Math.round(img.naturalWidth*sc)); cv.height=Math.max(1,Math.round(img.naturalHeight*sc));
+        cv.getContext("2d").drawImage(img,0,0,cv.width,cv.height);
+        gtItems.unshift(cv.toDataURL("image/jpeg",0.82));
+        if(gtItems.length>24)gtItems.length=24;
+        if(!gtSave(gtItems)){ gtItems=gtItems.slice(0,8); if(!gtSave(gtItems)){alert("Penyimpanan perangkat penuh — sebagian foto tidak dapat disimpan.");} }
+        done(); };
+      img.onerror=function(){ URL.revokeObjectURL(url); done(); };
+      img.src=url;
+    });
+  });
+  var CIKEY="oasis-malam-checkin-v1", ciList=document.getElementById("ciList");
+  var ciSeed=[{n:"Keluarga Besar Pratama",s:"Resepsi",w:"11.02 WIB (contoh)"},{n:"Sahabat Meyzsa",s:"Akad Nikah",w:"07.58 WIB (contoh)"}];
+  function ciLoad(){try{var v=JSON.parse(localStorage.getItem(CIKEY));if(Array.isArray(v))return v;}catch(e){} return ciSeed.slice();}
+  function ciRender(items){ if(!ciList)return; ciList.innerHTML="";
+    items.forEach(function(it){ var d=document.createElement("div");d.className="gb-item";
+      var b=document.createElement("b");b.textContent=it.n;
+      var st=document.createElement("span");st.className="st";st.textContent="· Check-in "+it.s;
+      var p=document.createElement("p");p.textContent="Tercatat pukul "+it.w;
+      d.appendChild(b);d.appendChild(st);d.appendChild(p);ciList.appendChild(d);});}
+  var ciItems=ciLoad(); ciRender(ciItems);
+  var ciForm=document.getElementById("ciForm");
+  if(ciForm)ciForm.addEventListener("submit",function(e){ e.preventDefault();
+    var n=document.getElementById("ciName").value.trim();
+    if(!n){alert("Mohon isi nama untuk check-in.");return;}
+    var s=document.getElementById("ciSesi").value, now=new Date();
+    var w=String(now.getHours()).padStart(2,"0")+"."+String(now.getMinutes()).padStart(2,"0")+" WIB (demo)";
+    ciItems.unshift({n:n,s:s,w:w});
+    try{localStorage.setItem(CIKEY,JSON.stringify(ciItems.slice(0,30)));}catch(err){}
+    ciRender(ciItems); e.target.reset();
+  });
+  var KEY="oasis-malam-guestbook-v1", list=document.getElementById("guestbookList");
+  var seed=[
+    {n:"Keluarga Besar Ridwan",a:"Hadir",m:"Barakallahu lakuma wa baraka 'alaikuma. Selamat menempuh hidup baru, Meyzsa & Fahrezzi! (contoh ucapan)"},
+    {n:"Sahabat Kampus Fahrezzi",a:"Hadir",m:"Semoga sakinah mawaddah warahmah, langgeng hingga ke Jannah. (contoh ucapan)"}
+  ];
+  function load(){try{var v=JSON.parse(localStorage.getItem(KEY));if(Array.isArray(v))return v;}catch(e){} return seed.slice();}
+  function render(items){
+    if(!list)return; list.innerHTML="";
+    items.forEach(function(it){
+      var d=document.createElement("div");d.className="gb-item";
+      var b=document.createElement("b");b.textContent=it.n;
+      var st=document.createElement("span");st.className="st";st.textContent="· "+it.a;
+      var p=document.createElement("p");p.textContent=it.m;
+      d.appendChild(b);d.appendChild(st);d.appendChild(p);list.appendChild(d);
+    });
+  }
+  var items=load(); render(items);
+  document.getElementById("rsvpForm").addEventListener("submit",function(e){
+    e.preventDefault();
+    var n=document.getElementById("rsvpName").value.trim(), m=document.getElementById("rsvpMsg").value.trim(),
+        a=document.getElementById("rsvpAttend").value;
+    if(!n||!m){alert("Mohon isi nama dan ucapan terlebih dahulu.");return;}
+    items.unshift({n:n,a:a,m:m});
+    try{localStorage.setItem(KEY,JSON.stringify(items.slice(0,30)));}catch(err){}
+    render(items); e.target.reset();
+  });
+})();
+</script>
+</body>
+</html>
