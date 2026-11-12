@@ -6,20 +6,23 @@
 <title>Oasis Malam — Meyzsa &amp; Fahrezzi | Sabtu 12 Juni 2027</title>
 <meta name="description" content="Undangan pernikahan digital Oasis Malam — perjalanan malam melintasi bukit pasir menuju oasis di bawah bulan purnama: Meyzsa &amp; Fahrezzi, Sabtu 12 Juni 2027, Jakarta.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070d26'/%3E%3Ccircle cx='20' cy='13' r='7' fill='%23f0d48a'/%3E%3Cpath d='M2 26 Q11 19 20 24 T38 24 V32 H2 Z' fill='%23c9a35f'/%3E%3C/svg%3E">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/undangya/oasis-malam/font-script.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/undangya/oasis-malam/font-hero-display.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/undangya/oasis-malam/font-hero-kicker.woff2">
 <style>
 @font-face{font-family:'Great Vibes';src:url('assets/undangya/oasis-malam/font-script.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Oasis Display';src:url('assets/undangya/oasis-malam/font-hero-display.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Oasis Kicker';src:url('assets/undangya/oasis-malam/font-hero-kicker.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
 :root{--gold:#d9ab4e;--gold-l:#f0d48a;--cream:#fdf6e3;--sand:#e8cf9f;--sand-d:#b98d4a;--night:#070d26;--night2:#0b1533;--water:#0e2f38;--palm:#7fb069;--paper:#f7ecd0;--ink:#2b2118;--ink2:#57462e;--line:rgba(240,212,138,.55);--glass:rgba(9,13,38,.88)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:#03040f;font-family:Georgia,'Times New Roman',serif;color:var(--cream);-webkit-font-smoothing:antialiased}
-.script{font-family:'Great Vibes',cursive}
+.script{font-family:'Oasis Display','Great Vibes',cursive}
 .phone{max-width:430px;margin:0 auto;position:relative;min-height:100dvh;overflow:clip;box-shadow:0 0 90px rgba(0,0,0,.95);background:linear-gradient(180deg,#05081c 0%,#081230 20%,#0a2230 44%,#0c2b2e 64%,#1d2f36 82%,#3d3540 93%,#5c4c4c 100%)}
 img{max-width:100%;display:block}button{font-family:inherit;cursor:pointer}a{color:var(--gold-l)}
 /* gerak berjangkar: gantung (atas) & tegak (pangkal bawah diam, tanpa translate) */
-.sway-g{transform-origin:50% 0;animation:swayG var(--sd,8.4s) cubic-bezier(.37,0,.63,1) infinite alternate}
+.sway-g{transform-origin:50% 0;animation:swayG var(--sd,4.2s) cubic-bezier(.37,.02,.63,.98) infinite alternate}
 @keyframes swayG{from{transform:rotate(calc(var(--sa,2.4deg)*-1))}to{transform:rotate(var(--sa,2.4deg))}}
-.sway-t{transform-origin:50% 100%;animation:swayT var(--sd,8.8s) cubic-bezier(.37,0,.63,1) infinite alternate}
+.sway-t{transform-origin:50% 100%;animation:swayT var(--sd,4.4s) cubic-bezier(.37,.02,.63,.98) infinite alternate}
 @keyframes swayT{from{transform:rotate(calc(var(--sa,1.8deg)*-1))}to{transform:rotate(var(--sa,1.8deg))}}
 /* ===== SAMPUL ===== */
 #cover{position:relative;height:100dvh;min-height:640px;overflow:hidden;background:#070d26;z-index:2}
@@ -52,9 +55,9 @@ body.opening .moon-wrap{animation:moonRise 2.1s cubic-bezier(.22,.8,.3,1) both}
 .cover-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,28,.34) 0%,transparent 30%,transparent 52%,rgba(5,8,28,.55) 100%);z-index:4;pointer-events:none}
 .cover-ui{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;text-align:center;padding:24px 26px 30px}
 .cover-panel{margin-top:9%;background:rgba(7,13,38,.78);border:1px solid var(--line);border-radius:20px;padding:18px 22px 16px;box-shadow:0 14px 34px rgba(0,0,0,.55)}
-.cover-kicker{font-size:11px;font-weight:700;letter-spacing:.4em;color:#fff3d0;animation:fadeUp 1s 2.2s ease both,kickGlow 3.6s ease-in-out 3.4s infinite alternate}
+.cover-kicker{font-family:'Oasis Kicker',sans-serif;font-size:11px;font-weight:700;letter-spacing:.4em;color:#fff3d0;animation:fadeUp 1s 2.2s ease both,kickGlow 3.6s ease-in-out 3.4s infinite alternate}
 @keyframes kickGlow{from{text-shadow:0 0 0 rgba(240,212,138,0)}to{text-shadow:0 0 14px rgba(240,212,138,.8)}}
-.cover-names{font-family:'Great Vibes',cursive;font-weight:400;margin-top:8px;font-size:60px;line-height:1.12;color:#fffaf0;text-shadow:0 2px 8px rgba(10,8,40,.8),0 0 26px rgba(240,212,138,.5);animation:fadeUp 1.1s 2.5s ease both}
+.cover-names{font-family:'Oasis Display','Great Vibes',cursive;font-weight:400;margin-top:10px;font-size:52px;letter-spacing:.01em;line-height:1.12;color:#fffaf0;text-shadow:0 2px 8px rgba(10,8,40,.8),0 0 26px rgba(240,212,138,.5);animation:fadeUp 1.1s 2.5s ease both}
 .cover-names .amp{display:block;font-size:32px;line-height:.95;margin:-4px 0 -8px;color:var(--gold-l)}
 .cover-date{margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.26em;color:#081230;background:linear-gradient(135deg,#c9a35f,#f0d48a 55%,#c9a35f);padding:7px 16px;border-radius:999px;border:1px solid rgba(255,246,214,.9);box-shadow:0 8px 20px rgba(0,0,0,.5);animation:fadeUp 1s 2.8s ease both,datePulse 3.2s ease-in-out 4s infinite alternate;display:inline-block}
 @keyframes datePulse{from{transform:scale(1)}to{transform:scale(1.035)}}
@@ -76,7 +79,7 @@ section{position:relative;padding:52px 24px}
 .sec-icon{width:54px;height:54px;margin:0 auto 10px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.6))}
 .sec-icon.float{animation:iconFloat 5s cubic-bezier(.37,0,.63,1) infinite alternate}
 @keyframes iconFloat{from{transform:translateY(0) rotate(-2deg)}to{transform:translateY(-6px) rotate(2deg)}}
-.sec-kicker{font-size:10.5px;letter-spacing:.36em;color:var(--gold-l);font-weight:800}
+.sec-kicker{font-family:'Oasis Kicker',sans-serif;font-size:10.5px;letter-spacing:.36em;color:var(--gold-l);font-weight:800}
 .sec-title{font-size:27px;font-weight:700;color:var(--cream);margin-top:7px;line-height:1.25}
 .sec-sub{font-style:italic;font-size:15.5px;color:var(--sand);margin-top:6px}
 /* pembagi punggung dune */
@@ -106,7 +109,7 @@ section{position:relative;padding:52px 24px}
 .person-card{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:14px 10px 16px;text-align:center;box-shadow:0 14px 30px rgba(0,0,0,.5)}
 .person-card .ph{border-radius:130px 130px 12px 12px;border:3px solid var(--gold);overflow:hidden;height:206px}
 .person-card .ph img{width:100%;height:100%;object-fit:cover}
-.person-card h3{font-family:'Great Vibes',cursive;font-size:25px;color:var(--gold-l);margin-top:12px;font-weight:400;line-height:1.15}
+.person-card h3{font-family:'Oasis Display','Great Vibes',cursive;font-size:20px;letter-spacing:.01em;color:var(--gold-l);margin-top:12px;font-weight:400;line-height:1.15}
 .person-card .gelar{font-size:11.5px;color:var(--sand)}
 .person-card p{font-size:11.5px;line-height:1.6;color:#ece4f7;margin-top:7px}
 .ig-btn{display:inline-block;margin-top:10px;padding:7px 13px;border-radius:999px;border:1px solid var(--gold);color:var(--gold-l);font-size:11px;font-weight:700;text-decoration:none;background:rgba(7,13,38,.7)}
@@ -228,6 +231,24 @@ body.opened #btnMusic{display:flex}
 #lightbox{position:fixed;inset:0;z-index:90;background:rgba(3,5,20,.95);display:none;align-items:center;justify-content:center;padding:22px}
 #lightbox.on{display:flex}
 #lightbox img{max-height:82dvh;border-radius:12px;border:3px solid var(--gold)}
+
+/* background gambar unik per section (Program Detail E) + scrim penjaga kontras */
+#sambutan{background:linear-gradient(rgba(5,8,28,.84),rgba(5,8,28,.90)),url('assets/undangya/oasis-malam/bg-arch.webp') center/cover}
+#mempelai{background:linear-gradient(rgba(5,8,28,.86),rgba(5,8,28,.91)),url('assets/undangya/oasis-malam/bg-world.webp') center/cover}
+#kisah{background:linear-gradient(rgba(5,8,28,.82),rgba(5,8,28,.89)),url('assets/undangya/oasis-malam/langit-bank.webp') center/cover}
+#acara{background:linear-gradient(rgba(5,8,28,.85),rgba(5,8,28,.90)),url('assets/undangya/oasis-malam/bg-tent.webp') center/cover}
+#galeri{background:linear-gradient(rgba(5,8,28,.84),rgba(5,8,28,.90)),url('assets/undangya/oasis-malam/bg-sec-galeri.webp') center/cover}
+#cuplikan{background:linear-gradient(rgba(5,8,28,.84),rgba(5,8,28,.90)),url('assets/undangya/oasis-malam/bg-sec-cuplikan.webp') center/cover}
+#live{background:linear-gradient(rgba(5,8,28,.83),rgba(5,8,28,.89)),url('assets/undangya/oasis-malam/bg-sec-live.webp') center/cover}
+#rsvp{background:linear-gradient(rgba(5,8,28,.84),rgba(5,8,28,.90)),url('assets/undangya/oasis-malam/bg-sec-rsvp.webp') center/cover}
+#bukutamu{background:linear-gradient(rgba(5,8,28,.85),rgba(5,8,28,.90)),url('assets/undangya/oasis-malam/bg-sec-bukutamu.webp') center/cover}
+#amplop{background:linear-gradient(rgba(5,8,28,.85),rgba(5,8,28,.90)),url('assets/undangya/oasis-malam/bg-sec-amplop.webp') center/cover}
+#turut{background:linear-gradient(rgba(5,8,28,.84),rgba(5,8,28,.90)),url('assets/undangya/oasis-malam/bg-sec-turut.webp') center/cover}
+#penutup{background:linear-gradient(rgba(5,8,28,.80),rgba(5,8,28,.88)),url('assets/undangya/oasis-malam/bg-sec-penutup.webp') center/cover}
+.dune-div img.dune-img{width:100%;height:100%;object-fit:cover;object-position:50% 38%;display:block}
+.dune-div.flip img.dune-img{transform:scaleX(-1)}
+.hang-lantern{position:absolute;top:-8px;z-index:3;pointer-events:none;filter:drop-shadow(0 6px 14px rgba(240,180,80,.35))}
+img.dune-cover{object-fit:cover;object-position:50% 30%}
 /* reveal bervariasi */
 .rv{opacity:0}
 .rv.in{opacity:1;transition:opacity .9s ease,transform .95s cubic-bezier(.22,.8,.3,1),clip-path .95s cubic-bezier(.22,.8,.3,1)}
@@ -256,6 +277,9 @@ body.opened #btnMusic{display:flex}
     <img data-deco class="lyr lyr-sky" src="assets/undangya/oasis-malam/cover-bg.webp" alt="Lukisan oasis malam: kolam jernih memantulkan cahaya bulan, rumpun palem utuh di tepi kolam, bukit pasir berlapis, langit berbintang">
     <div data-deco class="moon-glow" aria-hidden="true"></div>
     <div data-deco class="moon-wrap" aria-hidden="true"><img src="assets/undangya/oasis-malam/om-bulan-purnama.webp" alt=""></div>
+    <img data-deco class="hang-lantern sway-g" style="--sa:2.2deg;--sd:3.3s;left:1.5%;width:46px" src="assets/undangya/oasis-malam/oasis-lentera-gurun.webp" alt="">
+    <img data-deco class="hang-lantern sway-g" style="--sa:1.9deg;--sd:4.1s;right:1.5%;width:38px" src="assets/undangya/oasis-malam/oasis-lentera-gurun.webp" alt="">
+    <img data-deco class="lyr" style="left:5%;top:4.5%;width:54px;z-index:2;animation:moonPulse 5.4s ease-in-out infinite alternate" src="assets/undangya/oasis-malam/oasis-bulan-sabit.webp" alt="">
     <span data-deco class="star" style="left:6%;top:6%;width:3px;height:3px;--tw:2.2s;--td:.1s"></span>
     <span data-deco class="star" style="left:16%;top:12%;width:2px;height:2px;--tw:3.4s;--td:.5s"></span>
     <span data-deco class="star" style="left:27%;top:5%;width:3.4px;height:3.4px;--tw:2.7s;--td:.9s"></span>
@@ -274,13 +298,18 @@ body.opened #btnMusic{display:flex}
     <span data-deco class="star" style="left:44%;top:34%;width:1.8px;height:1.8px;--tw:3.7s;--td:2.7s"></span>
     <span data-deco class="star" style="left:8%;top:38%;width:2px;height:2px;--tw:2.9s;--td:2.2s"></span>
     <span data-deco class="star" style="left:94%;top:36%;width:2.2px;height:2.2px;--tw:3.5s;--td:.2s"></span>
-    <svg data-deco class="dune-svg" viewBox="0 0 430 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 62 Q110 18 230 52 T430 44 V120 H0 Z" fill="#8a6d3b" opacity=".85"/><path d="M0 84 Q130 44 260 74 T430 70 V120 H0 Z" fill="#c9a35f"/><path d="M0 102 Q150 72 290 94 T430 92 V120 H0 Z" fill="#e8cf9f"/><ellipse cx="86" cy="96" rx="7" ry="3" fill="#8a6d3b" opacity=".55"/><ellipse cx="112" cy="102" rx="6" ry="2.6" fill="#8a6d3b" opacity=".45"/><ellipse cx="330" cy="100" rx="7" ry="3" fill="#8a6d3b" opacity=".5"/></svg>
-    <img data-deco class="lyr palm-fg l sway-t" style="--sa:1.6deg;--sd:9.4s" src="assets/undangya/oasis-malam/palem.webp" alt="">
-    <img data-deco class="lyr palm-fg r sway-t" style="--sa:1.9deg;--sd:8.7s" src="assets/undangya/oasis-malam/palem-kipas.webp" alt="">
-    <img data-deco class="lyr grass-fg sway-t" style="--sa:2.1deg;--sd:8.2s;left:5%" src="assets/undangya/oasis-malam/om-rumput-gurun.webp" alt="">
-    <img data-deco class="lyr grass-fg sway-t" style="--sa:1.8deg;--sd:9.1s;right:6%" src="assets/undangya/oasis-malam/om-rumput-gurun.webp" alt="">
-    <img data-deco class="lyr grass-fg sway-t" style="--sa:2.3deg;--sd:7.9s;left:44%;width:11%" src="assets/undangya/oasis-malam/om-rumput-gurun.webp" alt="">
-    <img data-deco class="lyr sway-t" style="--sa:1.7deg;--sd:9s;left:1%;bottom:15.5%;width:24%;z-index:4" src="assets/undangya/oasis-malam/bloom-gurun.webp" alt="">
+    <img data-deco class="dune-svg dune-cover" src="assets/undangya/oasis-malam/oasis-strip-dune.webp" alt="">
+    <img data-deco class="lyr palm-fg l sway-t" style="--sa:1.6deg;--sd:4.6s" src="assets/undangya/oasis-malam/palem.webp" alt="">
+    <img data-deco class="lyr palm-fg r sway-t" style="--sa:1.9deg;--sd:3.9s" src="assets/undangya/oasis-malam/palem-kipas.webp" alt="">
+    <img data-deco class="lyr grass-fg sway-t" style="--sa:2.1deg;--sd:3.4s;left:5%" src="assets/undangya/oasis-malam/om-rumput-gurun.webp" alt="">
+    <img data-deco class="lyr grass-fg sway-t" style="--sa:1.8deg;--sd:4.9s;right:6%" src="assets/undangya/oasis-malam/om-rumput-gurun.webp" alt="">
+    <img data-deco class="lyr grass-fg sway-t" style="--sa:2.3deg;--sd:2.9s;left:44%;width:11%" src="assets/undangya/oasis-malam/om-rumput-gurun.webp" alt="">
+    <img data-deco class="lyr sway-t" style="--sa:1.7deg;--sd:4.2s;left:1%;bottom:15.5%;width:24%;z-index:4" src="assets/undangya/oasis-malam/bloom-gurun.webp" alt="">
+    <img data-deco class="lyr sway-t" style="--sa:1.8deg;--sd:4.8s;right:1%;bottom:15.5%;width:21%;z-index:4" src="assets/undangya/oasis-malam/bloom-gurun.webp" alt="">
+    <img data-deco class="lyr" style="left:7%;bottom:16.2%;width:70px;z-index:5" src="assets/undangya/oasis-malam/oasis-teko-kuningan.webp" alt="">
+    <img data-deco class="sand-spr" style="left:14%;bottom:44%;width:26px;--pd:12s;--pdl:-3s" src="assets/undangya/oasis-malam/petal.webp" alt="">
+    <img data-deco class="sand-spr" style="left:4%;bottom:56%;width:20px;--pd:15s;--pdl:-8s" src="assets/undangya/oasis-malam/petal.webp" alt="">
+    <img data-deco class="sand-spr" style="left:20%;bottom:64%;width:30px;--pd:17s;--pdl:-6s" src="assets/undangya/oasis-malam/petal.webp" alt="">
     <div data-deco class="pool" aria-hidden="true">
       <span data-deco class="ripple" style="left:14%;top:26%;animation-delay:0s"></span>
       <span data-deco class="ripple" style="left:56%;top:44%;animation-delay:1.5s"></span>
@@ -295,7 +324,7 @@ body.opened #btnMusic{display:flex}
   </div>
   <div class="cover-ui">
     <div class="cover-panel">
-      <div class="cover-kicker">UNDANGAN PERNIKAHAN</div>
+      <div class="cover-kicker">THE WEDDING OF</div>
       <h1 class="cover-names">Meyzsa<span class="amp">&amp;</span>Fahrezzi</h1>
       <div class="cover-date">SABTU · 12 JUNI 2027</div>
     </div>
@@ -319,10 +348,10 @@ body.opened #btnMusic{display:flex}
       <p style="margin-top:10px;font-size:12px;letter-spacing:.24em;color:var(--gold-l);font-weight:700">— QS. AR-RUM AYAT 21 —</p>
       <p class="txt" style="margin-top:16px">Dengan memohon rahmat dan rida Allah SWT, kami bermaksud menyempurnakan separuh agama dalam ikatan suci pernikahan — seperti oasis yang ditemukan di tengah perjalanan panjang melintasi gurun kehidupan.</p>
     </div>
-    <img class="orn sway-t" style="--sa:2deg;--sd:8.8s;left:-8px;bottom:6px;width:64px" src="assets/undangya/oasis-malam/flw-lavender.webp" alt="">
+    <img class="orn sway-t" style="--sa:2deg;--sd:3.8s;left:-8px;bottom:6px;width:64px" src="assets/undangya/oasis-malam/flw-lavender.webp" alt="">
   </section>
 
-  <div class="dune-div" aria-hidden="true"><svg viewBox="0 0 430 64" preserveAspectRatio="none"><path d="M0 30 Q110 4 230 24 T430 18 V64 H0 Z" fill="#8a6d3b" opacity=".7"/><path d="M0 44 Q140 18 280 38 T430 36 V64 H0 Z" fill="#c9a35f"/><path d="M0 54 Q160 36 300 50 T430 50 V64 H0 Z" fill="#e8cf9f"/><ellipse cx="90" cy="52" rx="6" ry="2.4" fill="#8a6d3b" opacity=".5"/><ellipse cx="116" cy="56" rx="5" ry="2" fill="#8a6d3b" opacity=".4"/></svg><span class="dune-label">OASIS · 01 — PUNGGUNG DUNE PERTAMA</span></div>
+  <div class="dune-div" aria-hidden="true"><img class="dune-img" src="assets/undangya/oasis-malam/oasis-strip-dune.webp" alt=""><span class="dune-label">OASIS · 01 — PUNGGUNG DUNE PERTAMA</span></div>
 
   <section id="mempelai">
     <div class="night-head rv rv-up">
@@ -336,8 +365,8 @@ body.opened #btnMusic{display:flex}
       <div style="text-align:center"><p class="gal-cap">Di tepi kolam oasis, tempat dua perjalanan menjadi satu.</p></div>
     </div>
     <div class="canopy-wrap">
-      <img class="canopy l sway-t" style="--sa:1.4deg;--sd:9.6s" src="assets/undangya/oasis-malam/kurma-ranting.webp" alt="">
-      <img class="canopy r sway-t" style="--sa:1.4deg;--sd:9.6s" src="assets/undangya/oasis-malam/kurma-ranting.webp" alt="">
+      <img class="canopy l sway-t" style="--sa:1.4deg;--sd:5.2s" src="assets/undangya/oasis-malam/kurma-ranting.webp" alt="">
+      <img class="canopy r sway-t" style="--sa:1.4deg;--sd:5.2s" src="assets/undangya/oasis-malam/kurma-ranting.webp" alt="">
       <div class="couple-grid">
         <div class="person-card rv rv-left">
           <div class="ph"><img src="assets/undangya/oasis-malam/bride.webp" alt="Mempelai wanita, Meyzsa Putri Ananda, dalam gaun krem-emas dan hijab krem berkilau"></div>
@@ -357,7 +386,7 @@ body.opened #btnMusic{display:flex}
     </div>
   </section>
 
-  <div class="dune-div flip" aria-hidden="true"><svg viewBox="0 0 430 64" preserveAspectRatio="none"><path d="M0 30 Q110 4 230 24 T430 18 V64 H0 Z" fill="#8a6d3b" opacity=".7"/><path d="M0 44 Q140 18 280 38 T430 36 V64 H0 Z" fill="#c9a35f"/><path d="M0 54 Q160 36 300 50 T430 50 V64 H0 Z" fill="#e8cf9f"/></svg><span class="dune-label">OASIS · 02 — MENURUNI LEMBAH PASIR</span></div>
+  <div class="dune-div flip" aria-hidden="true"><img class="dune-img" src="assets/undangya/oasis-malam/oasis-strip-dune.webp" alt=""><span class="dune-label">OASIS · 02 — MENURUNI LEMBAH PASIR</span></div>
 
   <section id="kisah">
     <div class="night-head rv rv-left">
@@ -392,7 +421,7 @@ body.opened #btnMusic{display:flex}
     <p class="demo-note demo-pill rv rv-up">Linimasa &amp; teks kisah di atas adalah contoh untuk tampilan tema.</p>
   </section>
 
-  <div class="dune-div" aria-hidden="true"><svg viewBox="0 0 430 64" preserveAspectRatio="none"><path d="M0 30 Q110 4 230 24 T430 18 V64 H0 Z" fill="#8a6d3b" opacity=".7"/><path d="M0 44 Q140 18 280 38 T430 36 V64 H0 Z" fill="#c9a35f"/><path d="M0 54 Q160 36 300 50 T430 50 V64 H0 Z" fill="#e8cf9f"/></svg><span class="dune-label">OASIS · 03 — FASE BULAN BERGANTI</span></div>
+  <div class="dune-div" aria-hidden="true"><img class="dune-img" src="assets/undangya/oasis-malam/oasis-strip-dune.webp" alt=""><span class="dune-label">OASIS · 03 — FASE BULAN BERGANTI</span></div>
 
   <section id="acara">
     <div class="night-head rv rv-zoom">
@@ -455,10 +484,10 @@ body.opened #btnMusic{display:flex}
       <p>Jakarta Selatan. Valet parking tersedia di lobi utama Pacific Place. Ballroom berada di area hotel; petugas penerima tamu akan mengarahkan Anda dari lobi.</p>
       <div class="btn-row"><a class="btn" href="https://maps.google.com/?q=The+Ritz-Carlton+Jakarta+Pacific+Place" target="_blank" rel="noopener">BUKA PETA</a><a class="btn btn-alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Resepsi+Meyzsa+%26+Fahrezzi&amp;dates=20270612T040000Z%2F20270612T060000Z&amp;details=Resepsi+Pernikahan+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=The+Ritz-Carlton+Jakarta%2C+Pacific+Place%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KE KALENDER</a></div>
     </div>
-    <img class="orn sway-t" style="--sa:2.2deg;--sd:8.6s;right:-10px;bottom:4px;width:66px" src="assets/undangya/oasis-malam/pampas.webp" alt="">
+    <img class="orn sway-t" style="--sa:2.2deg;--sd:3.6s;right:-10px;bottom:4px;width:66px" src="assets/undangya/oasis-malam/pampas.webp" alt="">
   </section>
 
-  <div class="dune-div flip" aria-hidden="true"><svg viewBox="0 0 430 64" preserveAspectRatio="none"><path d="M0 30 Q110 4 230 24 T430 18 V64 H0 Z" fill="#8a6d3b" opacity=".7"/><path d="M0 44 Q140 18 280 38 T430 36 V64 H0 Z" fill="#c9a35f"/><path d="M0 54 Q160 36 300 50 T430 50 V64 H0 Z" fill="#e8cf9f"/></svg><span class="dune-label">OASIS · 04 — TIBA DI TEPI KOLAM</span></div>
+  <div class="dune-div flip" aria-hidden="true"><img class="dune-img" src="assets/undangya/oasis-malam/oasis-strip-dune.webp" alt=""><span class="dune-label">OASIS · 04 — TIBA DI TEPI KOLAM</span></div>
 
   <section id="galeri">
     <div class="night-head rv rv-rot-r">
@@ -470,20 +499,20 @@ body.opened #btnMusic{display:flex}
     <div class="gal-hint">— GESER TEPI KOLAM KANAN · KIRI —</div>
     <div class="oasis-wrap">
       <div class="oasis-rail" id="railOasis">
-        <div class="oasis-slide is-palm rv rv-up"><span class="bab-chip">Perhentian 1 · Mata Air</span><div class="ph"><img class="canopy-img sway-g" style="--sa:1.6deg;--sd:8.8s" src="assets/undangya/oasis-malam/om-kanopi-palem.webp" alt=""><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-1.webp" alt="Pasangan di tepi kolam oasis malam" loading="lazy"></div><p class="gal-cap">Tepi kolam oasis</p></div>
-        <div class="oasis-slide is-well rv rv-up"><span class="bab-chip">Perhentian 2 · Batu Sumur</span><div class="ph"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-2.webp" alt="Pasangan di bawah palem senja" loading="lazy"><img class="stones" src="assets/undangya/oasis-malam/om-batu-sumur.webp" alt=""></div><div class="reflect" aria-hidden="true"><img src="assets/undangya/oasis-malam/galeri-2.webp" alt=""></div><p class="gal-cap">Bawah palem senja</p></div>
-        <div class="oasis-slide is-palm rv rv-up"><span class="bab-chip">Perhentian 3 · Teduh Palem</span><div class="ph"><img class="canopy-img sway-g" style="--sa:1.8deg;--sd:9.3s" src="assets/undangya/oasis-malam/om-kanopi-palem.webp" alt=""><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-3.webp" alt="Pasangan di perkemahan malam yang tenang" loading="lazy"></div><p class="gal-cap">Kemah malam yang tenang</p></div>
-        <div class="oasis-slide is-well rv rv-up"><span class="bab-chip">Perhentian 4 · Riak Senja</span><div class="ph"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-4.webp" alt="Pasangan di bukit pasir senja" loading="lazy"><img class="stones" src="assets/undangya/oasis-malam/om-batu-sumur.webp" alt=""></div><div class="reflect" aria-hidden="true"><img src="assets/undangya/oasis-malam/galeri-4.webp" alt=""></div><p class="gal-cap">Bukit pasir senja</p></div>
-        <div class="oasis-slide is-palm rv rv-up"><span class="bab-chip">Perhentian 5 · Pasir Emas</span><div class="ph"><img class="canopy-img sway-g" style="--sa:1.5deg;--sd:8.5s" src="assets/undangya/oasis-malam/om-kanopi-palem.webp" alt=""><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-5.webp" alt="Pasangan di bawah langit malam berbintang" loading="lazy"></div><p class="gal-cap">Di bawah bintang</p></div>
-        <div class="oasis-slide is-well rv rv-up"><span class="bab-chip">Perhentian 6 · Bayang Bulan</span><div class="ph"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-6.webp" alt="Pasangan di tepi oasis malam" loading="lazy"><img class="stones" src="assets/undangya/oasis-malam/om-batu-sumur.webp" alt=""></div><div class="reflect" aria-hidden="true"><img src="assets/undangya/oasis-malam/galeri-6.webp" alt=""></div><p class="gal-cap">Tepi oasis malam</p></div>
-        <div class="oasis-slide is-palm rv rv-up"><span class="bab-chip">Perhentian 7 · Rumput Oasis</span><div class="ph"><img class="canopy-img sway-g" style="--sa:1.9deg;--sd:9s" src="assets/undangya/oasis-malam/om-kanopi-palem.webp" alt=""><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-7.webp" alt="Pasangan di teras malam berbintang" loading="lazy"></div><p class="gal-cap">Teras malam berbintang</p></div>
-        <div class="oasis-slide is-well rv rv-up"><span class="bab-chip">Perhentian 8 · Fajar Tipis</span><div class="ph"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-8.webp" alt="Pasangan dengan karavan unta siluet di kejauhan" loading="lazy"><img class="stones" src="assets/undangya/oasis-malam/om-batu-sumur.webp" alt=""></div><div class="reflect" aria-hidden="true"><img src="assets/undangya/oasis-malam/galeri-8.webp" alt=""></div><p class="gal-cap">Karavan di kejauhan</p></div>
+        <div class="oasis-slide is-palm rv rv-up"><span class="bab-chip">Perhentian 1 · Mata Air</span><div class="ph"><img class="canopy-img sway-g" style="--sa:1.6deg;--sd:4.4s" src="assets/undangya/oasis-malam/oasis-kanopi-palem.webp" alt=""><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-1.webp" alt="Pasangan di tepi kolam oasis malam" loading="lazy"></div><p class="gal-cap">Tepi kolam oasis</p></div>
+        <div class="oasis-slide is-well rv rv-up"><span class="bab-chip">Perhentian 2 · Batu Sumur</span><div class="ph"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-2.webp" alt="Pasangan di bawah palem senja" loading="lazy"><img class="stones" src="assets/undangya/oasis-malam/oasis-batu-sumur.webp" alt=""></div><div class="reflect" aria-hidden="true"><img src="assets/undangya/oasis-malam/galeri-2.webp" alt=""></div><p class="gal-cap">Bawah palem senja</p></div>
+        <div class="oasis-slide is-palm rv rv-up"><span class="bab-chip">Perhentian 3 · Teduh Palem</span><div class="ph"><img class="canopy-img sway-g" style="--sa:1.8deg;--sd:5.0s" src="assets/undangya/oasis-malam/oasis-kanopi-palem.webp" alt=""><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-3.webp" alt="Pasangan di perkemahan malam yang tenang" loading="lazy"></div><p class="gal-cap">Kemah malam yang tenang</p></div>
+        <div class="oasis-slide is-well rv rv-up"><span class="bab-chip">Perhentian 4 · Riak Senja</span><div class="ph"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-4.webp" alt="Pasangan di bukit pasir senja" loading="lazy"><img class="stones" src="assets/undangya/oasis-malam/oasis-batu-sumur.webp" alt=""></div><div class="reflect" aria-hidden="true"><img src="assets/undangya/oasis-malam/galeri-4.webp" alt=""></div><p class="gal-cap">Bukit pasir senja</p></div>
+        <div class="oasis-slide is-palm rv rv-up"><span class="bab-chip">Perhentian 5 · Pasir Emas</span><div class="ph"><img class="canopy-img sway-g" style="--sa:1.5deg;--sd:3.7s" src="assets/undangya/oasis-malam/oasis-kanopi-palem.webp" alt=""><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-5.webp" alt="Pasangan di bawah langit malam berbintang" loading="lazy"></div><p class="gal-cap">Di bawah bintang</p></div>
+        <div class="oasis-slide is-well rv rv-up"><span class="bab-chip">Perhentian 6 · Bayang Bulan</span><div class="ph"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-6.webp" alt="Pasangan di tepi oasis malam" loading="lazy"><img class="stones" src="assets/undangya/oasis-malam/oasis-batu-sumur.webp" alt=""></div><div class="reflect" aria-hidden="true"><img src="assets/undangya/oasis-malam/galeri-6.webp" alt=""></div><p class="gal-cap">Tepi oasis malam</p></div>
+        <div class="oasis-slide is-palm rv rv-up"><span class="bab-chip">Perhentian 7 · Rumput Oasis</span><div class="ph"><img class="canopy-img sway-g" style="--sa:1.9deg;--sd:4.7s" src="assets/undangya/oasis-malam/oasis-kanopi-palem.webp" alt=""><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-7.webp" alt="Pasangan di teras malam berbintang" loading="lazy"></div><p class="gal-cap">Teras malam berbintang</p></div>
+        <div class="oasis-slide is-well rv rv-up"><span class="bab-chip">Perhentian 8 · Fajar Tipis</span><div class="ph"><img class="gal-photo" src="assets/undangya/oasis-malam/galeri-8.webp" alt="Pasangan dengan karavan unta siluet di kejauhan" loading="lazy"><img class="stones" src="assets/undangya/oasis-malam/oasis-batu-sumur.webp" alt=""></div><div class="reflect" aria-hidden="true"><img src="assets/undangya/oasis-malam/galeri-8.webp" alt=""></div><p class="gal-cap">Karavan di kejauhan</p></div>
       </div>
     </div>
     <div class="rail-meta"><span class="rail-frac" id="fracOasis">1 / 8</span><span class="rail-dots" id="dotsOasis"></span></div>
   </section>
 
-  <div class="dune-div" aria-hidden="true"><svg viewBox="0 0 430 64" preserveAspectRatio="none"><path d="M0 30 Q110 4 230 24 T430 18 V64 H0 Z" fill="#8a6d3b" opacity=".7"/><path d="M0 44 Q140 18 280 38 T430 36 V64 H0 Z" fill="#c9a35f"/><path d="M0 54 Q160 36 300 50 T430 50 V64 H0 Z" fill="#e8cf9f"/></svg><span class="dune-label">OASIS · 05 — AIR TENANG, HATI TENANG</span></div>
+  <div class="dune-div" aria-hidden="true"><img class="dune-img" src="assets/undangya/oasis-malam/oasis-strip-dune.webp" alt=""><span class="dune-label">OASIS · 05 — AIR TENANG, HATI TENANG</span></div>
 
   <section id="cuplikan">
     <div class="night-head rv rv-rot">
@@ -532,7 +561,7 @@ body.opened #btnMusic{display:flex}
     </div>
   </section>
 
-  <div class="dune-div flip" aria-hidden="true"><svg viewBox="0 0 430 64" preserveAspectRatio="none"><path d="M0 30 Q110 4 230 24 T430 18 V64 H0 Z" fill="#8a6d3b" opacity=".7"/><path d="M0 44 Q140 18 280 38 T430 36 V64 H0 Z" fill="#c9a35f"/><path d="M0 54 Q160 36 300 50 T430 50 V64 H0 Z" fill="#e8cf9f"/></svg><span class="dune-label">OASIS · 06 — PAPAN PETUNJUK DI PERSIMPANGAN</span></div>
+  <div class="dune-div flip" aria-hidden="true"><img class="dune-img" src="assets/undangya/oasis-malam/oasis-strip-dune.webp" alt=""><span class="dune-label">OASIS · 06 — PAPAN PETUNJUK DI PERSIMPANGAN</span></div>
 
   <section id="rsvp">
     <div class="signpost rv rv-drop">
@@ -562,10 +591,10 @@ body.opened #btnMusic{display:flex}
       <p class="sec-sub">Tunjukkan QR ini saat tiba — seperti tiba di sumur oasis</p>
     </div>
     <div class="panel rv rv-zoom" style="text-align:center">
-      <img class="orn sway-t" style="--sa:1.6deg;--sd:9s;right:8px;top:10px;width:52px;position:absolute" src="assets/undangya/oasis-malam/om-bulan-purnama.webp" alt="">
+      <img class="orn sway-t" style="--sa:1.6deg;--sd:4.1s;right:8px;top:10px;width:52px;position:absolute" src="assets/undangya/oasis-malam/om-bulan-purnama.webp" alt="">
       <div class="qr-box"><img src="assets/undangya/oasis-malam/qr-undangan.webp" alt="Kode QR menuju halaman undangan Oasis Malam" loading="lazy" decoding="async"></div>
       <p class="small-note" style="margin-top:10px">QR statis menuju halaman undangan ini:<br>https://yfarch0912.github.io/oasis-malam-preview/oasis-malam.html</p>
-      <img src="assets/undangya/oasis-malam/om-batu-sumur.webp" alt="" style="width:72%;margin:12px auto 0">
+      <img src="assets/undangya/oasis-malam/oasis-batu-sumur.webp" alt="" style="width:72%;margin:12px auto 0">
       <form id="ciForm" novalidate style="text-align:left;margin-top:18px">
         <div class="field"><label for="ciName">Nama Tamu</label><input id="ciName" type="text" placeholder="Nama Anda" autocomplete="name"></div>
         <div class="field"><label for="ciSesi">Sesi</label><select id="ciSesi"><option value="Akad Nikah">Akad Nikah</option><option value="Resepsi">Resepsi</option></select></div>
@@ -576,7 +605,7 @@ body.opened #btnMusic{display:flex}
     </div>
   </section>
 
-  <div class="dune-div" aria-hidden="true"><svg viewBox="0 0 430 64" preserveAspectRatio="none"><path d="M0 30 Q110 4 230 24 T430 18 V64 H0 Z" fill="#8a6d3b" opacity=".7"/><path d="M0 44 Q140 18 280 38 T430 36 V64 H0 Z" fill="#c9a35f"/><path d="M0 54 Q160 36 300 50 T430 50 V64 H0 Z" fill="#e8cf9f"/></svg><span class="dune-label">OASIS · 07 — TANDA KASIH DI TEPI AIR</span></div>
+  <div class="dune-div" aria-hidden="true"><img class="dune-img" src="assets/undangya/oasis-malam/oasis-strip-dune.webp" alt=""><span class="dune-label">OASIS · 07 — TANDA KASIH DI TEPI AIR</span></div>
 
   <section id="amplop">
     <div class="night-head rv rv-up">
@@ -603,7 +632,7 @@ body.opened #btnMusic{display:flex}
       <p class="txt" style="margin-top:8px">Kediaman Mempelai Wanita (alamat contoh)<br>Jl. Contoh Oasis No. 12, Jakarta Selatan 12180</p>
       <button class="salin-btn" type="button" data-copytext="Jl. Contoh Oasis No. 12, Jakarta Selatan 12180">SALIN ALAMAT</button>
     </div>
-    <img class="orn sway-t" style="--sa:2deg;--sd:8.9s;left:-8px;bottom:8px;width:60px" src="assets/undangya/oasis-malam/flw-kamboja.webp" alt="">
+    <img class="orn sway-t" style="--sa:2deg;--sd:4.3s;left:-8px;bottom:8px;width:60px" src="assets/undangya/oasis-malam/flw-kamboja.webp" alt="">
   </section>
 
   <section id="turut">
@@ -618,10 +647,10 @@ body.opened #btnMusic{display:flex}
       <div class="panel turut-card rv rv-right"><h4>Keluarga Mempelai Pria</h4><p>Keluarga Besar H. Bambang Sutrisno &amp; Hj. Ratna Dewi<br>Beserta segenap kerabat dan sahabat</p></div>
     </div>
     <p class="demo-note demo-pill rv rv-up" style="margin-top:14px">Susunan keluarga di atas adalah contoh untuk tampilan tema.</p>
-    <img class="orn sway-t" style="--sa:1.9deg;--sd:9.2s;right:-8px;bottom:2px;width:62px" src="assets/undangya/oasis-malam/flw-mawar-krem.webp" alt="">
+    <img class="orn sway-t" style="--sa:1.9deg;--sd:3.5s;right:-8px;bottom:2px;width:62px" src="assets/undangya/oasis-malam/flw-mawar-krem.webp" alt="">
   </section>
 
-  <div class="dune-div flip" aria-hidden="true"><svg viewBox="0 0 430 64" preserveAspectRatio="none"><path d="M0 30 Q110 4 230 24 T430 18 V64 H0 Z" fill="#8a6d3b" opacity=".7"/><path d="M0 44 Q140 18 280 38 T430 36 V64 H0 Z" fill="#c9a35f"/><path d="M0 54 Q160 36 300 50 T430 50 V64 H0 Z" fill="#e8cf9f"/></svg><span class="dune-label">FAJAR · HORIZON MULAI TERANG</span></div>
+  <div class="dune-div flip" aria-hidden="true"><img class="dune-img" src="assets/undangya/oasis-malam/oasis-strip-dune.webp" alt=""><span class="dune-label">FAJAR · HORIZON MULAI TERANG</span></div>
 
   <section id="penutup" style="text-align:center">
     <img class="dawn-strip rv rv-zoom breath-img" src="assets/undangya/oasis-malam/senja-bank.webp" alt="Langit senja ungu lembut di horizon — fajar tipis menutup perjalanan malam">
